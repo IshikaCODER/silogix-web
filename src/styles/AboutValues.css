@@ -1,0 +1,79 @@
+
+.about-values-area{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.values-section .values-section-title .values-title{
+    margin: 0 250px 10px 250px;
+    color: var(--primary_color2);
+    text-align: center;
+}
+
+.values-section .values-section-title .values-content{
+    text-align: center;
+    margin: 0 270px 48px 270px;
+    padding-top: 10px;
+}
+
+.values-section-content .icon-box-wrapper{
+    display: flex;
+    padding: 40px;
+    border: 1px solid var(--gray);
+}
+
+.values-section-content #icon-box-1{
+    border-radius: 12px 0 0 0;
+}
+
+.values-section-content #icon-box-2{
+    border-radius: 0 12px 0 0;
+    border-left: none;
+}
+
+.values-section-content #icon-box-3{
+    border-radius: 0 0 0 12px;
+    border-top: none;
+}
+
+.values-section-content #icon-box-4{
+    border-radius: 0 0 12px 0;
+    border-top: none;
+    border-left: none;
+}
+
+.icon-box-wrapper .icon-box{
+    height: 70px;
+    width: 180px;
+    border-radius: 8px;
+    background-color: var(--primary_color2);
+    margin: 16px 25px 0 0;
+    text-align: center;
+    align-content: center;
+}
+
+.icon-box-wrapper .icon-box .icon-color-style i{
+    font-size: 24px;
+    color: var(--white);
+}
+
+.icon-box-wrapper .icon-body .icon-title{
+    color: var(--dark1);
+}
+
+.icon-box-wrapper .icon-body .icon-description{
+    font-size: 16px;
+}
+
+
+.icon-box-wrapper:hover{
+    background-color: #c2d3f8;
+}
+
+.icon-box-wrapper:hover .icon-box{
+    background-color: var(--white);
+}
+
+.icon-box-wrapper:hover .icon-box .icon-color-style i{
+    color: var(--dark1);
+}

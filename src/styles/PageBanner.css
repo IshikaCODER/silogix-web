@@ -1,0 +1,50 @@
+.section{
+    float: left;
+    width: 100%;
+}
+.page-banner-section {
+    /* padding-top: 85px; */
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .page-banner .title {
+    font-size: 60px;
+    line-height: 1.25;
+    font-family: "Barlow", sans-serif;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+  }
+  .page-banner .breadcrumb {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  .page-banner .breadcrumb .breadcrumb-item {
+    color: var(--white);
+    font-size: 20px;
+  }
+  .page-banner .breadcrumb .breadcrumb-item a{
+    color: var(--white);
+    font-size: 20px;
+  }
+  .page-banner .breadcrumb .breadcrumb-item + .breadcrumb-item {
+    padding-left: 8px;
+  }
+  
+  .page-banner .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    font-family: flaticon !important;
+    font-size: 20px;
+    padding-right: 5px;
+    color: var(--white);
+  }

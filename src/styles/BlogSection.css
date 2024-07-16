@@ -1,0 +1,136 @@
+/* blog-section */
+
+.blog-section{
+    padding: 120px 0 70px 0;
+}
+
+/* blog-title */
+
+.blog-title .sub-title {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--primary_color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.blog-title .title{
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+    color: var(--dark1);
+    margin-bottom: 0;
+}
+
+/* blog-cards */
+
+.blog-wrap{
+    padding-top: 20px;
+}
+
+.blog-card{
+    margin-top: 30px;
+}
+
+.blog-card .blog-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blog-image img{
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.blog-card:hover .blog-image a img {
+    transform: scale(1.1);
+  }
+
+.blog-card .blog-image .top-meta {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.blog-card .blog-image .top-meta .date {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background: linear-gradient(-180deg, #43baff 0%, #7141b1 100%);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 12px;
+    padding: 10px;
+}
+
+.blog-card .blog-image .top-meta .date span {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    display: block;
+}
+
+.blog-card .blog-content {
+    padding: 25px 30px 40px;
+    background: var(--white);
+    width: 90%;
+    position: relative;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-48%);
+    margin-top: -40px;
+}
+
+.blog-card .blog-content .blog-meta span, .blog-card .blog-content .blog-meta span a{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--gray0);
+    margin-right: 15px;
+}
+
+.blog-card .blog-content .blog-meta span i {
+    color: var(--primary_color);
+    margin-right: 5px;
+}
+
+.blog-card .blog-content .title a{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--dark1);
+    padding-right: 15px;
+    margin: 15px 0 0 0;
+}
+
+.blog-card .blog-content .title a:hover, .blog-card .blog-content .blog-meta span a:hover{
+    text-decoration: none;
+    color: var(--primary_color);
+}
+
+.blog-card .blog-btn .blog-btn-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary_color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: all 0.3s linear;
+  }
+  
+  .blog-card .blog-btn .blog-btn-link i {
+    transition: all 0.3s linear;
+  }
+  
+  .blog-card .blog-btn .blog-btn-link:hover i {
+    margin-left: 5px;
+  }

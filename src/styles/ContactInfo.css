@@ -1,0 +1,33 @@
+/* <!-- Contact Info Start --> */
+
+.section-padding-02 {
+  padding-top: 120px;
+}
+
+.contact-info-section .contact-info-wrap {
+  margin-top: -30px;
+}
+
+.contact-info-section .contact-info-wrap .single-contact-info {
+  background: #f8f8f8;
+  padding: 50px 77px 75px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+img {
+  transition: all 0.3s linear;
+  outline: 0;
+}
+.contact-info-section .contact-info-wrap .single-contact-info .info-content .title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contact-info-section .contact-info-wrap .single-contact-info .info-content p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+

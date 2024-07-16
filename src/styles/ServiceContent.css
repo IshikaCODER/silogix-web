@@ -1,0 +1,31 @@
+/* whole matter */
+#components{
+    margin: 0 130px ;
+    margin-bottom: 60px;
+    background: linear-gradient(270deg, #e8eef5c7 0%, #ded8f9  100%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-part{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-padding1{
+    padding: 5px 10px 5px 90px;
+}
+
+.right-padding1{
+    padding: 5px 90px 5px 10px;
+}
+
+.service-img{
+    height: 200px;
+    width: 200px;
+}
+
+

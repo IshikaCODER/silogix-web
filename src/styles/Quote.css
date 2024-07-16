@@ -1,0 +1,19 @@
+/* quote */
+.quote{
+    margin: 60px 88px;
+    padding: 65px 95px;
+    background-image: url(../assets/imgage.webp);
+    background-size: cover;
+    opacity: 0.85;
+    border-radius: 8px;
+}
+
+.quote h3, .quote h5{
+    color: #fff;
+    text-align: center;
+}
+
+.quote h5{
+    color: #eae8e8;
+}
+

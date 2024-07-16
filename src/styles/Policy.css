@@ -1,0 +1,29 @@
+.policy-section{
+    padding-top: 90px;
+}
+.policy-title-section{
+    margin-bottom: 45px;
+}
+.policy-title-section .policy-title{
+    margin-bottom: 15px;
+}
+.policy-intro{
+    margin-bottom: 45px;
+}
+.intro-title, .info-title{
+    margin-bottom: 20px;
+}
+.info-section{
+    padding: 20px 0 90px 0;
+}
+.info-content p{
+    line-height: 2;
+    margin-bottom: 0;
+}
+.single-info{
+    padding-bottom: 40px;
+}
+.para-pd{
+    padding-bottom: 10px;
+}
+

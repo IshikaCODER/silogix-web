@@ -1,0 +1,185 @@
+.find-jobs-area {
+    background-color: #f8f8f8;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pt-45 {
+    padding-top: 45px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.find-jobs-card {
+    background-color: var(--white);
+    border-radius: 3px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    margin-bottom: 30px;
+}
+.find-jobs-card .find-jobs-img {
+    margin-right: 20px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+.find-jobs-card .content .content-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.find-jobs-card .content .content-list li.time {
+    color: var(--primary_color);
+    background-color: #c2d3f8;
+}
+.find-jobs-card .content .content-list li {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.find-jobs-card .content .content-list li:last-child {
+    margin-right: 0;
+}
+.find-jobs-card .content h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.find-jobs-card .content h3 a {
+    color: var(--dark1);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    display: inline-block;
+}
+.find-jobs-card .content .content-list2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.find-jobs-card .content .content-list2 li.list-one {
+    font-size: 20px;
+    color: var(--primary_color);
+    margin-right: 50px;
+}
+.find-jobs-card .content .content-list2 li {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.find-jobs-card .content .content-list3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.find-jobs-card .content .content-list3 li {
+    /* display: inline-block; */
+    margin-right: 0;
+    font-size: 16px;
+    color: var(--dark3);
+}
+.find-jobs-card .content .content-list3 li i {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    color: var(--primary_color2);
+}
+.find-jobs-card .content .content-list3 li b {
+    color: var(--dark1);
+    font-size: 18px;
+    font-weight: 400;
+}
+.find-jobs-card:hover .find-jobs-img {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.find-jobs-card:hover .content h3 a {
+    color: var(--primary_color);
+}
+
+/* btn */
+
+.find-jobs-card .find-jobs-btn {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+.find-jobs-card:hover .find-jobs-btn {
+    opacity: 1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.default-btn {
+    padding: 12px 30px;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    /* z-index: 1;
+    background-color: var(--primary_color2);
+    border-radius: 5px;
+    position: relative;
+    transition: .3s; */
+}
+/* .default-btn:hover {
+    color: var(--white);
+} */
+.default-btn i {
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    transition: .3s;
+}
+/* .default-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background-color: var(--dark1);
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+.default-btn:hover::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+ */
+
+
+
+.browse-btn {
+    margin-bottom: 30px;
+}
+.browse-btn a {
+    color: var(--primary_color);
+    border-bottom: 1px solid var(--primary_color);
+    font-weight: 500;
+}
+.browse-btn a i {
+    margin-left: 3px;
+    position: relative;
+    top: 2px;
+}
+.browse-btn a:hover {
+    color: var(--dark1);
+    letter-spacing: 0.25px;
+    border-color: var(--dark1);
+}

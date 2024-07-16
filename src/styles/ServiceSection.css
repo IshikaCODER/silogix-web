@@ -1,0 +1,98 @@
+/* service */
+
+.heading-center, .service-card .card-title{
+    text-align: center;
+}
+
+.service{
+    padding: 40px 0;
+    background-color: #09172f;
+}
+
+.s-cards{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-card{
+    margin: 3px;
+}
+
+.service-card .card-title{
+    margin-top: 15px;
+}
+
+.card-1{
+    height: 310px;
+    width: 220px;
+    margin-top: 47px;
+}
+
+.card-2{
+    height: 355px;
+    width: 240px;
+    margin-top: 25px;
+}
+
+.card-3{
+    height: 400px;
+    width: 280px;
+}
+
+.card-4{
+    height: 355px;
+    width: 240px;
+    margin-top: 25px;
+}
+
+.card-5{
+    height: 310px;
+    width: 220px;
+    margin-top: 47px;
+}
+
+.arrow-4{
+     margin-top: 25px;
+}
+
+.para-display{
+    font-size: 13.5px;
+}
+
+.para-small{
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.card-img{
+    height: 48%;
+}
+
+.card-para{
+    margin-bottom: 0;
+    padding: 10px 20px 0 20px;
+}
+
+.arrow-icon{
+    margin-left: 65%;
+}
+
+.btn-color{
+    color: #5409c6;
+}
+
+.service-card , .h1, .h2, .h3, .btn-wrapper{
+    transition: transform 0.3s, z-index 0.3s, box-shadow 0.3s; 
+}
+
+.service-card:hover , .h1:hover, .h2:hover, .h3:hover, .btn-wrapper:hover{
+    transform: scale(1.1); 
+    z-index: 1; 
+    box-shadow: 0px 0px 15px rgba(85, 232, 237, 0.3); 
+}
+
+.service-card:not(:hover) {
+    transform: scale(1); 
+    z-index: 0;
+}

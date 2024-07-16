@@ -1,0 +1,76 @@
+.about-founder-area{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.founder-section .founder-section-title .founder-title{
+    margin: 0 250px 10px 250px;
+    color: var(--primary_color2);
+    text-align: center;
+}
+
+.founder-section .founder-section-title .founder-content{
+    text-align: center;
+    margin: 0 320px 48px 320px;
+    padding-top: 10px;
+}
+
+.founder-img-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.founder-img .card{
+    height: 700px;
+    width: 540px;
+    border-color: var(--gray);
+}
+
+.founder-img .card .card-img-top{
+    height: 80%;
+}
+
+.founder-img .card .card-body{
+    padding: 30px 30px 0 30px;
+    margin-bottom: 40px;
+}
+
+.founder-img .card .card-body .card-title{
+    margin-bottom: 18px;
+}
+
+.founder-img .card .card-body .card-icons{
+    display: none;
+    margin-top: 25px;
+}
+
+.founder-img .card:hover .card-body .card-icons{
+    display: flex;
+    transition: all 0.3s linear;
+}
+
+.founder-img .card .card-body .card-icons .social-icon{
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.founder-img .card .card-body .card-icons .social-icon i{
+    font-size: 20px;
+    color: var(--dark1);
+}
+
+.founder-img .card .card-body .card-icons .social-icon:hover i{
+    color: var(--white);
+    background-color: var(--dark1);
+}
+
+.founder-img .card .card-body .card-icons .social-icon:hover{
+    background-color: var(--dark1);
+}
