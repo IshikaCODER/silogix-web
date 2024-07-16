@@ -1,13 +1,17 @@
 
 .about-values-area{
     padding-top: 90px;
-    padding-bottom: 90px;
 }
 
 .values-section .values-section-title .values-title{
     margin: 0 250px 10px 250px;
-    color: var(--primary_color2);
+    color: var(--dark1);
     text-align: center;
+}
+
+.values-section .values-section-title .values-title .colored-title{
+    color: var(--primary_color2);
+    font-weight: 600;
 }
 
 .values-section .values-section-title .values-content{
@@ -67,7 +71,7 @@
 
 
 .icon-box-wrapper:hover{
-    background-color: #c2d3f8;
+    background-color: var(--primary_light0);
 }
 
 .icon-box-wrapper:hover .icon-box{

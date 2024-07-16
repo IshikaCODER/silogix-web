@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/AboutValues.css'
+import React from 'react';
+import '../styles/AboutValues.css';
 
 function Values() {
   return (
@@ -11,7 +11,7 @@ function Values() {
                     {/* <!-- values-section-title-start --> */}
                     <div className="values-section-title">
                         <div className="values-title">
-                            <h1>Driving Innovation with Values in Our Startup World</h1>
+                            <h1>Driving Innovation with Values in <span className="colored-title">Our Startup World</span></h1>
                         </div>
                         <div className="values-content">
                             <p>We're driven by a set of core values that shape our culture, guide 

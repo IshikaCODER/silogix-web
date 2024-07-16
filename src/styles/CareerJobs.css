@@ -32,7 +32,7 @@
 }
 .find-jobs-card .content .content-list li.time {
     color: var(--primary_color);
-    background-color: #c2d3f8;
+    background-color: var(--primary_light0);
 }
 .find-jobs-card .content .content-list li {
     display: inline-block;

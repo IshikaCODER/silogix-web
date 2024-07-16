@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import AboutHero from '../components/AboutHero';
-import Mission from '../components/Mission';
-import Quote from '../components/Quote';
+import AboutGoals from '../components/AboutGoals';
+import AboutQuote from '../components/AboutQuote';
 import AboutValues from '../components/AboutValues';
-import VideoSection from '../components/VideoSection';
+import AboutNumbers from '../components/AboutNumbers';
 import AboutFounder from '../components/AboutFounder';
 import SubSection from '../components/SubSection';
 import Footer from '../components/Footer';
@@ -16,10 +16,10 @@ function AboutUs() {
     <>
       <Navbar/>
       <AboutHero/>
-      <Mission/>
-      <Quote/>
+      <AboutGoals/>
+      <AboutQuote/>
       <AboutValues/>
-      <VideoSection/>
+      <AboutNumbers/>
       <AboutFounder/>
       <SubSection/>
       <Footer/>

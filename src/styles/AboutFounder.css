@@ -5,8 +5,13 @@
 
 .founder-section .founder-section-title .founder-title{
     margin: 0 250px 10px 250px;
-    color: var(--primary_color2);
+    color: var(--dark1);
     text-align: center;
+}
+
+.founder-section .founder-section-title .founder-title .colored-title{
+    color: var(--primary_color2);
+    font-weight: 600;
 }
 
 .founder-section .founder-section-title .founder-content{
