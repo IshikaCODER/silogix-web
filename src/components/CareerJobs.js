@@ -1,10 +1,23 @@
 import React from 'react';
 import '../styles/CareerJobs.css';
 import { Link } from 'react-router-dom';
+// import logo1 from '../assets/images/logo.png';
+// import logo2 from '../assets/images/logo192.png';
+// import logo3 from '../assets/images/blog1.jpg';
+// import logo4 from '../assets/images/blog2.jpg';
+// import logo5 from '../assets/images/blog3.jpg';
+
+// const images = [
+//     { id: 1, src: logo1, title: 'logo1' },
+//     { id: 2, src: logo2, title: 'logo2' },
+//     { id: 3, src: logo1, title: 'logo3' },
+//     { id: 4, src: logo2, title: 'logo4' },
+//     { id: 5, src: logo5, title: 'logo5' }
+// ]
 
 const jobData = [
     {
-        imgSrc: { src: "https://career.f1soft.com/images/organizations/1688277670_fonepay.png", alt:"Senior Associate Engineer-System - Job Image"},
+        imgSrc: { src: "", alt:"Senior Associate Engineer-System - Job Image"},
         time: " 3 weeks ago",
         link: "#",
         post: "Senior Associate Engineer-System",
@@ -14,7 +27,7 @@ const jobData = [
         date: "2024-07-15"
     },
     {
-        imgSrc: { src: "https://career.f1soft.com/images/organizations/1688277822_fonenxt.png", alt:"QA Engineer - Job Image"},
+        imgSrc: { src: "", alt:"QA Engineer - Job Image"},
         time: " 1 month ago",
         link: "#",
         post: "QA Engineer",
@@ -24,7 +37,7 @@ const jobData = [
         date: "2024-07-18"
     },
     {
-        imgSrc: { src: "https://career.f1soft.com/images/organizations/1688277554_f1soft.png", alt:"Senior Software Engineer - JAVA (FoneInvest) - Job Image"},
+        imgSrc: { src: "", alt:"Senior Software Engineer - JAVA (FoneInvest) - Job Image"},
         time: " 1 month ago",
         link: "#",
         post: "Senior Software Engineer - JAVA (FoneInvest)",
@@ -34,7 +47,7 @@ const jobData = [
         date: "2024-07-18"
     },
     {
-        imgSrc: { src: "https://career.f1soft.com/images/organizations/1688277554_f1soft.png", alt:"Software Engineer - JAVA - Job Image"},
+        imgSrc: { src: "", alt:"Software Engineer - JAVA - Job Image"},
         time: " 1 month ago",
         link: "#",
         post: "Software Engineer - JAVA",
@@ -44,7 +57,7 @@ const jobData = [
         date: "2024-07-18"
     },
     {
-        imgSrc: { src: "https://career.f1soft.com/images/organizations/1688277554_f1soft.png", alt:"Senior Software Engineer - Java - Job Image"},
+        imgSrc: { src: "", alt:"Senior Software Engineer - Java - Job Image"},
         time: " 1 month ago",
         link: "#",
         post: "Senior Software Engineer - Java",
@@ -54,6 +67,10 @@ const jobData = [
         date: "2024-07-18"
     }
 ]
+
+// jobData.forEach((job, index) => {
+//     job.imgSrc = images[index].src;
+//   });
 
 function CareerJobs() {
   return (
