@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/PageBanner.css';
 import { Link } from 'react-router-dom';
-import banner from '../assets/banners/about-banner.png';
+import banner from '../assets/banners/blog-banner2.png';
 
 function BlogHero2() {
   return (
