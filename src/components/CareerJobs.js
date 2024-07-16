@@ -1,76 +1,75 @@
 import React from 'react';
 import '../styles/CareerJobs.css';
 import { Link } from 'react-router-dom';
-// import logo1 from '../assets/images/logo.png';
-// import logo2 from '../assets/images/logo192.png';
-// import logo3 from '../assets/images/blog1.jpg';
-// import logo4 from '../assets/images/blog2.jpg';
-// import logo5 from '../assets/images/blog3.jpg';
+import logo1 from '../assets/images/logo.png';
+import logo2 from '../assets/images/logo192.png';
+import logo3 from '../assets/images/node.png';
 
-// const images = [
-//     { id: 1, src: logo1, title: 'logo1' },
-//     { id: 2, src: logo2, title: 'logo2' },
-//     { id: 3, src: logo1, title: 'logo3' },
-//     { id: 4, src: logo2, title: 'logo4' },
-//     { id: 5, src: logo5, title: 'logo5' }
-// ]
+const logos = [
+    { id: 1, src: logo1, title: 'Silogix' },
+    { id: 2, src: logo2, title: 'React' },
+    { id: 3, src: logo1, title: 'Silogix' },
+    { id: 4, src: logo3, title: 'nodejs' },
+    { id: 5, src: logo1, title: 'Silogix' }
+]
 
 const jobData = [
     {
-        imgSrc: { src: "", alt:"Senior Associate Engineer-System - Job Image"},
+        imgSrc: { src: "", alt:""},
         time: " 3 weeks ago",
         link: "#",
         post: "Senior Associate Engineer-System",
-        company: "Fonepay Payment Service Ltd.",
+        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
         category: "IT/Tech Support/System Support",
-        location: "Fonepay Payment Service Ltd., Pulchowk, Lalitpur-3, Lalitpur, Nepal",
+        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
         date: "2024-07-15"
     },
     {
-        imgSrc: { src: "", alt:"QA Engineer - Job Image"},
+        imgSrc: { src: "", alt:""},
+        time: " 1 month ago",
+        link: "#",
+        post: "Senior Software Engineer - REACT",
+        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+        category: "Software Development",
+        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+        date: "2024-07-18"
+    },
+    {
+        imgSrc: { src: "", alt:""},
         time: " 1 month ago",
         link: "#",
         post: "QA Engineer",
-        company: "FoneNxt Pvt. Ltd.",
+        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
         category: "Quality Assurance (QA)",
-        location: "F1Soft Tower, Pulchowk, Lalitpur",
+        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
         date: "2024-07-18"
     },
     {
-        imgSrc: { src: "", alt:"Senior Software Engineer - JAVA (FoneInvest) - Job Image"},
+        imgSrc: { src: "", alt:""},
         time: " 1 month ago",
         link: "#",
-        post: "Senior Software Engineer - JAVA (FoneInvest)",
-        company: "F1Soft International Pvt. Ltd.",
+        post: "Software Engineer - Node JS",
+        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
         category: "Software Development",
-        location: "F1Soft Tower, Pulchowk, Lalitpur",
+        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
         date: "2024-07-18"
     },
     {
-        imgSrc: { src: "", alt:"Software Engineer - JAVA - Job Image"},
-        time: " 1 month ago",
-        link: "#",
-        post: "Software Engineer - JAVA",
-        company: "F1Soft International Pvt. Ltd.",
-        category: "Software Development",
-        location: "F1Soft Tower, Pulchowk, Lalitpur",
-        date: "2024-07-18"
-    },
-    {
-        imgSrc: { src: "", alt:"Senior Software Engineer - Java - Job Image"},
+        imgSrc: { src: "", alt:""},
         time: " 1 month ago",
         link: "#",
         post: "Senior Software Engineer - Java",
-        company: "F1Soft International Pvt. Ltd.",
+        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
         category: "Software Engineer",
-        location: "F1Soft Tower, Pulchowk, Lalitpur",
+        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
         date: "2024-07-18"
     }
 ]
 
-// jobData.forEach((job, index) => {
-//     job.imgSrc = images[index].src;
-//   });
+jobData.forEach((job, index) => {
+    job.imgSrc.src = logos[index].src;
+    job.imgSrc.alt = logos[index].title; // update alt property as well
+  });
 
 function CareerJobs() {
   return (
@@ -90,13 +89,13 @@ function CareerJobs() {
                     {jobData.map((job, index) => (
                     <div className="col-lg-12" key={index}>
                         <div className="find-jobs-card d-flex align-items-center">
-                            <div className="find-jobs-img">
+                            <div className="find-jobs-img col-xl-3">
                                 <img className="w-75"
                                     src={job.imgSrc.src}
                                     alt={job.imgSrc.alt} />
                             </div>
 
-                            <div className="content">
+                            <div className="content col-xl-9">
                                 <ul className="content-list">
                                     <li className="time">Full Time</li>
                                     <li className="list-two"><i className="fa-regular fa-clock"></i>{job.time}</li>

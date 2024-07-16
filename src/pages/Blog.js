@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import BlogHero from '../components/BlogHero';
-import BlogContent from '../components/BlogContent';
+import BlogCards from '../components/BlogCards';
 import SubSection from '../components/SubSection';
 import Footer from '../components/Footer';
 
@@ -11,7 +11,7 @@ function Blog() {
     <>
       <Navbar/>
       <BlogHero/>
-      <BlogContent/>
+      <BlogCards/>
       <SubSection/>
       <Footer/>
     </>

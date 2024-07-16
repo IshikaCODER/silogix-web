@@ -3,6 +3,7 @@ import AboutUs from '../src/pages/AboutUs'
 import Service from '../src/pages/Service'
 import Career from '../src/pages/Career'
 import Blog from '../src/pages/Blog'
+import BlogDescription from '../src/pages/BlogDescription'
 import Contact from '../src/pages/Contact'
 import Login from '../src/pages/Login'
 import Logout from '../src/pages/Logout'
@@ -21,6 +22,7 @@ function App() {
         <Route path="/service" element={<Service/>}/>
         <Route path="/career" element={<Career/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/blogdescription" element={<BlogDescription/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/logout" element={<Logout/>}/>

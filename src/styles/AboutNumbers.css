@@ -30,6 +30,7 @@
 
 .number-section .num-card p{
     font-size: 22px;
+    font-weight: 500;
     color: var(--dark1);
 }
 

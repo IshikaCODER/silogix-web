@@ -48,3 +48,11 @@
     padding-right: 5px;
     color: var(--white);
   }
+
+
+
+  /* blogDescription-hero */
+
+#blog-hero-2{
+  min-height: 350px;
+}

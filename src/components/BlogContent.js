@@ -1,199 +1,66 @@
-import React from "react";
-import "../styles/BlogSection.css";
-import { Link } from 'react-router-dom';
-import blog1 from '../assets/images/blog1.jpg';
-import blog2 from '../assets/images/bl2.jpg';
-import blog3 from '../assets/images/blog3.jpg';
-import blog4 from '../assets/images/blog4.jpg';
-import blog5 from '../assets/images/blog5.jpg';
-import blog6 from '../assets/images/blog6.jpg';
-import blog7 from '../assets/images/blog7.png';
-import blog8 from '../assets/images/blog8.jpg';
-import blog9 from '../assets/images/blog9.jpg';
-import blog10 from '../assets/images/blog10.jpg';
-import blog11 from '../assets/images/blog11.jpg';
-import blog12 from '../assets/images/blog12.jpg';
-
-const images = [
-  { id: 1, src: blog1, title: 'blog1' },
-  { id: 2, src: blog2, title: 'blog2' },
-  { id: 3, src: blog3, title: 'blog3' },
-  { id: 4, src: blog4, title: 'blog4' },
-  { id: 5, src: blog5, title: 'blog5' },
-  { id: 6, src: blog6, title: 'blog6' },
-  { id: 7, src: blog7, title: 'blog7' },
-  { id: 8, src: blog8, title: 'blog8' },
-  { id: 9, src: blog9, title: 'blog9' },
-  { id: 10, src: blog10, title: 'blog10' },
-  { id: 11, src: blog11, title: 'blog11' },
-  { id: 12, src: blog12, title: 'blog12' },
-];
-
-const blogData = [
-  {
-    date: { day: "06", month: "Jul" },
-    author: "Oliver Smith",
-    comments: 0,
-    title: "Advanced Chip Technologies",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "07", month: "Jul" },
-    author: "Oliver Smith",
-    comments: 0,
-    title: "Innovative Design Solutions",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "08", month: "Jul" },
-    author: "Oliver Smith",
-    comments: 0,
-    title: "Breakthroughs in Chip Performance",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "09", month: "Jul" },
-    author: "Noah Wright",
-    comments: 0,
-    title: "Pioneering Power Efficiency",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "10", month: "Jul" },
-    author: "Noah Wright",
-    comments: 0,
-    title: "Wearable Tech Integration",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "11", month: "Jul" },
-    author: "Noah Wright",
-    comments: 0,
-    title: "Cutting-Edge Memory Solutions",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "12", month: "Jul" },
-    author: "Emily Walsh",
-    comments: 0,
-    title: "High-Speed Connectivity Chips",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "13", month: "Jul" },
-    author: "Emily Walsh",
-    comments: 0,
-    title: "Automotive Semiconductor Solutions",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "14", month: "Jul" },
-    author: "Emily Walsh",
-    comments: 0,
-    title: "High-Performance Computing",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "15", month: "Jul" },
-    author: "Lauren Evans",
-    comments: 0,
-    title: "Quantum Computing Innovations",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "16", month: "Jul" },
-    author: "Lauren Evans",
-    comments: 0,
-    title: "IoT and Edge Computing Chips",
-    imgSrc: "",
-    link: "#"
-  },
-  {
-    date: { day: "17", month: "Jul" },
-    author: "Lauren Evans",
-    comments: 0,
-    title: "Security and Encryption Technologies",
-    imgSrc: "",
-    link: "#"
-  }
-];
-
-blogData.forEach((blog, index) => {
-  blog.imgSrc = images[index].src;
-});
+import React from 'react';
+import "../styles/BlogContent.css";
 
 function BlogContent() {
   return (
     <>
-      {/* blog-section-start */}
-      <div className="blog-section">
-        <div className="container">
-          {/* blog-title */}
-          {/* <div className="blog-title text-center">
-            <h4 className="sub-title">Latest Blog</h4>
-            <h2 className="title">From the news room</h2>
-          </div> */}
-          {/* blog-cards */}
-          <div className="blog-wrap">
-            <div className="row">
-              {blogData.map((blog, index) => (
-                <div className="col-lg-4 col-md-6" key={index}>
-                  <div className="blog-card">
-                    <div className="blog-image">
-                      <Link to={blog.link}>
-                        <img src={blog.imgSrc} alt="" />
-                      </Link>
-                      <div className="top-meta">
-                        <span className="date">
-                          <span>{blog.date.day}</span>
-                          {blog.date.month}
-                        </span>
-                      </div>
+      {/* <!-- blog-content-area-start --> */}
+        <div class="blog-content-area">
+            <div class="container">
+                <div class="blog-content-section">
+                    {/* <!-- blog-content-title-start --> */}
+                    <div class="blog-content-title">
+                        <h1 class="blog-title">
+                            Advanced Chip Technologies
+                        </h1>
+                        <p class="blog-subtitle">
+                            By <span className="colored-title">Oliver Smith</span>
+                        </p>
                     </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <span>
-                          <i className="fa-solid fa-user"></i>
-                          <Link to="#">{blog.author}</Link>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-comments"></i>
-                          {blog.comments} Comments
-                        </span>
-                      </div>
-                      <h3 className="title">
-                        <Link to={blog.link}>{blog.title}</Link>
-                      </h3>
-                      <div className="blog-btn">
-                        <Link to={blog.link} className="blog-btn-link">
-                          Read Full
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                      </div>
+                    {/* <!-- blog-content-title-end --> */}
+                    {/* <!-- blog-content-description-start --> */}
+                    <div class="blog-description">
+                        <p>
+                            Advanced Chip Technologies have revolutionized the semiconductor industry by enabling the 
+                            development of smaller, faster, and more powerful microchips. These cutting-edge technologies 
+                            have allowed chip manufacturers to pack billions of transistors onto a single chip, resulting 
+                            in exponential increases in processing power and reductions in energy consumption. With the ability 
+                            to fabricate transistors at the nanoscale, Advanced Chip Technologies have enabled the creation of 
+                            sophisticated systems-on-chip (SoCs) that integrate multiple functions, such as central processing 
+                            units (CPUs), graphics processing units (GPUs), and memory, onto a single piece of silicon.
+                        </p>
+                        <br/>
+                        <p>
+                            One of the key drivers of Advanced Chip Technologies is the relentless pursuit of Moore's Law, which 
+                            predicts that the number of transistors on a microchip will double approximately every two years, leading 
+                            to exponential improvements in computing power and reductions in cost. To achieve this, chip manufacturers 
+                            have developed innovative technologies such as 3D stacked transistors, FinFETs (Fin Field-Effect Transistors),
+                            and Gate-All-Around (GAA) transistors, which enable the creation of smaller, faster, and more efficient transistors. These advancements have enabled the development of high-performance computing systems, artificial intelligence (AI) and machine learning (ML) platforms, and Internet of Things (IoT) devices that are transforming industries and revolutionizing the way we live and work.
+                        </p>
+                        <br/>
+                        <p>
+                            The impact of Advanced Chip Technologies extends far beyond the semiconductor industry, with 
+                            far-reaching implications for fields such as healthcare, finance, transportation, and education. 
+                            For instance, the development of AI-powered chips has enabled the creation of personalized medicine 
+                            platforms that can analyze vast amounts of genomic data to develop targeted treatments for diseases. 
+                            Similarly, the development of high-performance computing systems has enabled the creation of sophisticated 
+                            financial modeling platforms that can analyze complex market trends and predict economic outcomes. 
+                            As Advanced Chip Technologies continue to evolve, we can expect to see even more innovative applications 
+                            that transform industries and improve our daily lives.
+                        </p>
+                        <br/>
+                        <p>
+                            As we continue to push the boundaries of what is possible with Advanced Chip Technologies, we can unlock 
+                            new possibilities and create a brighter future for all - "where innovation meets infinity."
+                        </p>
                     </div>
-                  </div>
+                    {/* <!-- blog-content-description-end --> */}
                 </div>
-              ))}
             </div>
-          </div>
         </div>
-      </div>
-      {/* blog-section-end */}
+        {/* <!-- blog-content-area-end --> */}
     </>
-  );
+  )
 }
 
-
 export default BlogContent;
-
-

@@ -10,7 +10,7 @@ const blogData = [
     comments: 0,
     title: "Advanced Chip Technologies",
     imgSrc: "https://i.ibb.co/nsTBwZw/img-3.png",
-    link: "#"
+    link: "/blogdescription"
   },
   {
     date: { day: "07", month: "Jul" },
@@ -18,7 +18,7 @@ const blogData = [
     comments: 0,
     title: "Innovative Design Solutions",
     imgSrc: "https://i.ibb.co/0JJr8KR/img-2.png",
-    link: "#"
+    link: "/blogdescription"
   },
   {
     date: { day: "08", month: "Jul" },
@@ -26,7 +26,7 @@ const blogData = [
     comments: 0,
     title: "Breakthroughs in Chip Performance",
     imgSrc: "https://i.ibb.co/jwrbtG7/img-1.png",
-    link: "#"
+    link: "/blogdescription"
   }
 ];
 
@@ -63,7 +63,7 @@ function BlogSection() {
                       <div className="blog-meta">
                         <span>
                           <i className="fa-solid fa-user"></i>
-                          <Link to="#">{blog.author}</Link>
+                          <Link to="/blogdescription">{blog.author}</Link>
                         </span>
                         <span>
                           <i className="fa-regular fa-comments"></i>
