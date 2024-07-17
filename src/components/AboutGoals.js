@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/AboutGoals.css'
-import img1 from '../assets/img1.jpg';
+import mission from '../assets/images/mission.jpeg';
+import vision from '../assets/images/vision-img.webp';
 
 function AboutGoals() {
   return (
@@ -12,7 +13,7 @@ function AboutGoals() {
                   {/* <!-- mission-section-start --> */}
                   <div className="mission-section goal-section">
                       <div className="mission-img col-xl-6 col-lg-6">
-                          <img src={img1} className="goal-img" alt=""/>
+                          <img src={mission} className="goal-img" alt=""/>
                       </div>
                       <div className="goal-content col-xl-6 col-lg-6">
                           <h2 className="mission-title">Our Mission</h2>
@@ -29,7 +30,7 @@ function AboutGoals() {
                               connected, efficient, and sustainable world.</p>
                       </div>
                       <div className="vision-img col-xl-6 col-lg-6">
-                          <img src={img1} className="goal-img" alt=""/>
+                          <img src={vision} className="goal-img" alt=""/>
                       </div>
                   </div>
                   {/* <!-- vision-section-end --> */}

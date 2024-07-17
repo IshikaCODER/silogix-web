@@ -1,0 +1,113 @@
+
+/* insights */
+
+.home-insight-area{
+    background-color: #09172f;
+}
+
+.home-insight-area .home-insight-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 0 90px 0;
+    align-items: center;
+    gap: 200px;
+}
+
+.home-insight-section .insight-card-section{
+    display: flex;
+}
+
+.insight-card-section .insight-card-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.insight-card-section .insight-card-section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.insight-card-section .insight-card-section-1{
+    margin-right: 10px;
+}
+
+.insight-card-section .insight-card-section-2{
+    margin-left: 10px;
+}
+
+.home-insight-section .insight-card-section .card-body{
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark1);
+    font-weight: 600;
+    align-content: center;
+    transition: all 0.3s linear;
+}
+
+.insight-card-section-1 .insight-card-1{
+    height: 245px;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.insight-card-section-1 .insight-card-2{
+    height: 225px;
+    width: 280px;
+    margin-top: 10px;
+}
+
+.insight-card-section-2 .insight-card-3{
+    height: 250px;
+    width: 285px;
+}
+
+.insight-card-section-1 .insight-card-1 #cardImg1{
+    height: 60%;
+    width: 100%;
+}
+
+.insight-card-section-1 .insight-card-2 #cardImg2{
+    height: 60%;
+    width: 100%;
+}
+
+.insight-card-section-2 .insight-card-3 #cardImg3{
+    height: 60%;
+    width: 100%;
+}
+
+.insight-section-title .insight-title{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.insight-section-title .title-underline{
+    height: 5px;
+    width: 100px;
+    background-color: var(--primary_color2);
+    border-radius: 2px;
+}
+
+.insight-card-section-2 .theme-btn{
+    text-align: center;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 20px;
+}
+
+.insight-card-section .card{
+    transition: all 0.3s linear;
+}
+
+.insight-card-section .card:hover {
+    box-shadow: 0 2px 15px var(--primary_light0);
+  }
+
+  .insight-card-section .card:hover .card-body{
+    color: var(--primary_color2);
+  }

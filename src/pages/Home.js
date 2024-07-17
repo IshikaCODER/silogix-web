@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HomeHero from '../components/HomeHero';
-import HighlightSection from '../components/HighlightSection';
+import InsightSection from '../components/InsightSection';
 import AboutSection from '../components/AboutSection';
 import ServiceSection from '../components/ServiceSection';
 import RDSection from '../components/RDSection';
@@ -15,7 +15,7 @@ function Home() {
     <>
       <Navbar/>
       <HomeHero/>
-      <HighlightSection/>
+      <InsightSection/>
       <AboutSection/>
       <RDSection/>
       <ServiceSection/>

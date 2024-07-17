@@ -116,7 +116,7 @@ function CareerJobs() {
 
                                     <div className="find-jobs-btn">
                                         <Link to={job.link} className="default-btn theme-btn" id='applyBtn'>
-                                            Apply<i class="fa-regular fa-paper-plane"></i>
+                                            Apply Now<i class="fa-regular fa-paper-plane"></i>
                                         </Link>
                                     </div>
                                 </div>

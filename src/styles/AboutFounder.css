@@ -24,23 +24,92 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .founder-img .card{
-    height: 700px;
-    width: 540px;
+    height: 750px;
+    width: 555px;
     border-color: var(--gray);
 }
 
-.founder-img .card .card-img-top{
+.founder-img .card .profile-img{
     height: 80%;
 }
 
+.founder-img .card #ceoImg{
+    background-color: #E0F1F1;
+}
+
+.founder-img .card #vpImg{
+    background-color: #FBE4D7;
+}
+
+.founder-img .profile-img .top-meta {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+.founder-img .profile-img .top-meta .profile-tag {
+    width: auto;
+    height: auto;
+    line-height: 65px;
+    text-align: center;
+    background: var(--white);
+    color: var(--dark1);
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 12px;
+    padding: 20px;
+}
+
+
+.founder-img .card .img-hover-bg{
+    visibility: hidden;
+}
+
+.founder-img .card .profile-img:hover .img-hover-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .4s ease;
+    opacity: 1;
+    visibility: visible;
+    z-index: 0;
+    border-radius: 5px;
+}
+
 .founder-img .card .card-body{
+    background-color: var(--white);
     padding: 30px 30px 0 30px;
+    position: relative;
     margin-bottom: 40px;
 }
+
+.card:hover .card-body {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.founder-img .card .card-body::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 0;
+    transition: all .4s ease;
+    z-index: -1;
+} 
 
 .founder-img .card .card-body .card-title{
     margin-bottom: 18px;
@@ -49,11 +118,12 @@
 .founder-img .card .card-body .card-icons{
     display: none;
     margin-top: 25px;
+    transition: all 3s ease-in-out 03s;
 }
 
 .founder-img .card:hover .card-body .card-icons{
     display: flex;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
 }
 
 .founder-img .card .card-body .card-icons .social-icon{
@@ -64,11 +134,13 @@
     text-align: center;
     align-content: center;
     margin-right: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .founder-img .card .card-body .card-icons .social-icon i{
     font-size: 20px;
     color: var(--dark1);
+    transition: all 0.2s ease-in-out;
 }
 
 .founder-img .card .card-body .card-icons .social-icon:hover i{

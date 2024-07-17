@@ -16,7 +16,7 @@ function BlogHero2() {
                             <div className="page-banner text-center">
                                 <h2 className="title">Blog Description</h2>
                                 <ul className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                                    <li className="breadcrumb-item">6 Jul</li>
                                     <li className="breadcrumb-item active" aria-current="page">Blog Description</li>
                                 </ul>
                             </div>
