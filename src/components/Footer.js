@@ -32,7 +32,7 @@ function Footer() {
                                                     </Link> 
                                                 </li>
                                                 <li className="socialmedia-icon">
-                                                    <Link to="/">
+                                                    <Link to="https://www.linkedin.com/company/silogixnano/about/"  target="_blank">
                                                         <i className="fa-brands fa-linkedin-in"></i>
                                                     </Link> 
                                                 </li>
