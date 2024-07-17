@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import CareerHero from '../components/CareerHero';
 import CareerSteps from '../components/CareerSteps';
@@ -7,7 +7,6 @@ import SubSection from '../components/SubSection';
 import Footer from '../components/Footer';
 
 function Career() {
-  document.title = 'Career';
   return (
     <>
       <Navbar/>
