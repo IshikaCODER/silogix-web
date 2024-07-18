@@ -7,6 +7,7 @@ import SubSection from '../components/SubSection';
 import Footer from '../components/Footer';
 
 function Career() {
+  document.title = 'Career';
   return (
     <>
       <Navbar/>
