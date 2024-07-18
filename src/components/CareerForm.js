@@ -45,7 +45,11 @@ function CareerForm() {
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="theme-btn">Submit</button>
+                <div className="col-sm-12">
+                    <div className="form-btn">
+                        <button type="submit" class="btn theme-btn">Submit</button>
+                    </div>
+                </div>
                 {/* <!-- form-fields-start --> */}
             </form>
         </div>
