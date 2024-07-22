@@ -1,25 +1,23 @@
-
-.about-values-area{
-    padding-top: 90px;
-}
-
-.values-section .values-section-title .values-title{
+.values-section .values-section-title .values-title {
     margin: 0 250px 10px 250px;
     color: var(--dark1);
     text-align: center;
 }
 
-.values-section .values-section-title .values-title .colored-title{
+.values-section .values-section-title .values-title .colored-title {
     color: var(--primary_color2);
     font-weight: 600;
 }
 
-.values-section .values-section-title .values-content{
+.values-section .values-section-title .values-content {
     text-align: center;
     margin: 0 270px 48px 270px;
     padding-top: 10px;
 }
 
+.about-values-area{
+    padding-top: 90px;
+}
 .values-section-content .icon-box-wrapper{
     display: flex;
     padding: 40px;
@@ -80,4 +78,53 @@
 
 .icon-box-wrapper:hover .icon-box .icon-color-style i{
     color: var(--dark1);
+}
+
+/* Responsive Adjustments For Section Title*/
+@media (max-width: 1200px) {
+    .values-section .values-section-title .values-title {
+        margin: 0 150px 10px 150px;
+        font-size: 32px;
+    }
+
+    .values-section .values-section-title .values-content {
+        margin: 0 160px 48px 160px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .values-section .values-section-title .values-title {
+        margin: 0 100px 10px 100px;
+        font-size: 28px;
+    }
+
+    .values-section .values-section-title .values-content {
+        margin: 0 110px 48px 110px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .values-section .values-section-title .values-title {
+        margin: 0 60px 10px 60px;
+        font-size: 24px;
+    }
+
+    .values-section .values-section-title .values-content {
+        margin: 0 70px 48px 70px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .values-section .values-section-title .values-title {
+        margin: 0 30px 10px 30px;
+        font-size: 20px;
+    }
+
+    .values-section .values-section-title .values-content {
+        margin: 0 40px 48px 40px;
+        font-size: 12px;
+    }
 }

@@ -1,60 +1,91 @@
 /* number-section */
-.about-section-wrapper .about-number-area{
+.about-section-wrapper .about-number-area {
     padding-top: 90px;
 }
 
-.about-number-area .number-section{
+.about-number-area .number-section {
     padding: 38px 0;
     background: var(--primary_light0);
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.number-section .num-card{
+.number-section .num-card {
     text-align: center;
     align-content: center;
     padding-right: 70px;
     border-right: 1px solid var(--primary_color2);
+    flex: 1 1 200px;
+    margin: 10px;
 }
 
-.number-section .num-card:last-child{
+.number-section .num-card:last-child {
     border-right: none;
     padding-right: 0;
 }
 
-.number-section .num-card h1{
+.number-section .num-card h1 {
     font-size: 45px;
     font-weight: 500;
     color: var(--primary_color);
 }
 
-.number-section .num-card p{
+.number-section .num-card p {
     font-size: 22px;
     font-weight: 500;
     color: var(--dark1);
 }
 
 /* video-section */
-.about-section-wrapper .video-section{
+.about-section-wrapper .video-section {
     text-align: center;
     padding-top: 90px;
 }
 
-.about-section-wrapper .video-section .video-title{
-    margin: 0 450px 40px 450px;
+.about-section-wrapper .video-section .video-title {
+    margin: 0 auto 40px auto;
     color: var(--dark1);
     text-align: center;
+    max-width: 90%;
 }
 
-.about-section-wrapper .video-section .video-title .colored-title{
+.about-section-wrapper .video-section .video-title .colored-title {
     color: var(--primary_color2);
     font-weight: 600;
 }
 
-.video-section video{
-    height: 150;
-    width: 900px;
+.video-section video {
+    height: auto;
+    width: 90%;
+    max-width: 900px;
     border-radius: 20px;
     border: 1px solid var(--primary_light0);
     box-shadow: 0 2px 20px var(--primary_light0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .number-section .num-card {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .about-section-wrapper .video-section .video-title {
+        margin: 0 20px 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .number-section .num-card h1 {
+        font-size: 30px;
+    }
+
+    .number-section .num-card p {
+        font-size: 18px;
+    }
+
+    .about-section-wrapper .video-section .video-title {
+        font-size: 24px;
+    }
 }

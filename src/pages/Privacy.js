@@ -1,26 +1,26 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import PrivacyHero from '../components/PrivacyHero';
-import PrivacyContent from '../components/PrivacyContent';
-import SubSection from '../components/SubSection';
-import Footer from '../components/Footer'
+import React from "react";
+import banner from "../assets/banners/privacy-banner.png";
+import PrivacyContent from "../components/PrivacyContent";
+import SubSection from "../components/SubSection";
+import Banner from "../components/Banner";
 
 function Privacy() {
-    document.title = 'Privacy Policy';
+  const breadcrumbs = [
+    { label: "Home", link: "/" },
+    { label: "Policy Policy" },
+  ];
   return (
     <>
-      <Navbar/>
-      <PrivacyHero/>
-      <PrivacyContent/>
-      <SubSection/>
-      <Footer/>
+    {/* Banner Components */}
+      <Banner
+        bannerImage={banner}
+        title="Privacy Policy"
+        breadcrumbs={breadcrumbs}
+      />
+      <PrivacyContent />
+      <SubSection />
     </>
-  )
+  );
 }
 
 export default Privacy;
-
-
-
-
-

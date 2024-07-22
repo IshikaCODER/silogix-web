@@ -1,23 +1,24 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import ServiceHero from '../components/ServiceHero';
-import ServiceCards from '../components/ServiceCards';
-import ServiceContent from '../components/ServiceContent';
-import SubSection from '../components/SubSection';
-import Footer from '../components/Footer';
+import React from "react";
+import banner from "../assets/banners/service-banner.png";
+import ServiceCards from "../components/ServiceCards";
+import ServiceContent from "../components/ServiceContent";
+import SubSection from "../components/SubSection";
+import Banner from "../components/Banner";
 
 function Service() {
-  document.title = 'Services';
+  const breadcrumbs = [{ label: "Home", link: "/" }, { label: "Our Services" }];
   return (
     <>
-      <Navbar/>
-      <ServiceHero/>
-      <ServiceCards/>
-      <ServiceContent/>
-      <SubSection/>
-      <Footer/>
+      <Banner
+        bannerImage={banner}
+        title="Our Services"
+        breadcrumbs={breadcrumbs}
+      />
+      <ServiceCards />
+      <ServiceContent />
+      <SubSection />
     </>
-  )
+  );
 }
 
 export default Service;

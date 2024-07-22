@@ -1,46 +1,109 @@
-.about-goal-area{
+.about-goal-area {
     padding-top: 90px;
 }
 
-.about-goal-section{
+.about-goal-section {
     padding: 8px;
-    /* background: var(--primary_light0); */
     border: 1px solid var(--gray);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
 }
 
-.goal-section{
+.goal-section {
     display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
 }
 
-.goal-section .goal-content{
-    padding: 0 70px ;
-    align-content: center;
+.goal-section .goal-content {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.goal-content .mission-title, .goal-content .vision-title{
+.goal-content .mission-title,
+.goal-content .vision-title {
     font-size: 40px;
     font-weight: 500;
     color: var(--dark1);
 }
 
-.goal-section .goal-content p{
+.goal-section .goal-content p {
     font-size: 20px;
     padding-top: 15px;
 }
 
-.goal-section .goal-img{
+.goal-section .goal-img {
     height: 330px;
     width: 100%;
+    object-fit: cover;
 }
 
-.mission-section .mission-img img{
+.mission-section .mission-img img {
     border-radius: 8px 0 0 8px;
 }
 
-.vision-section .vision-img img{
-    border-radius:0 8px 8px 0;
+.vision-section .vision-img img {
+    border-radius: 0 8px 8px 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .goal-section {
+        flex-direction: column;
+    }
+
+    .goal-section .goal-content {
+        padding: 20px 20px;
+    }
+
+    .goal-content .mission-title,
+    .goal-content .vision-title {
+        font-size: 32px;
+    }
+
+    .goal-section .goal-content p {
+        font-size: 18px;
+    }
+
+    .goal-section .goal-img {
+        height: 300px;
+    }
+
+    .mission-section .mission-img img,
+    .vision-section .vision-img img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .goal-content .mission-title,
+    .goal-content .vision-title {
+        font-size: 28px;
+    }
+
+    .goal-section .goal-content p {
+        font-size: 16px;
+    }
+
+    .goal-section .goal-img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .goal-content .mission-title,
+    .goal-content .vision-title {
+        font-size: 24px;
+    }
+
+    .goal-section .goal-content p {
+        font-size: 14px;
+    }
+
+    .goal-section .goal-img {
+        height: 200px;
+    }
+}
