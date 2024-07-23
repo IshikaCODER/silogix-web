@@ -13,7 +13,7 @@
 .goal-section {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .goal-section .goal-content {

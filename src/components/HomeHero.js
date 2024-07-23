@@ -15,11 +15,11 @@ function HomeHero() {
   return (
     <>
         {/* <!-- Hero-section-start --> */}
-        <section className="hero-empowerment-area flow">
+        <section className="hero-area flow">
             <div className="custom-container">
                 <div className="custom-row align-items-center">
                     {/* <!-- hero-section-left-start --> */}
-                    <div className="hero-empowerment-left-content">
+                    <div className="hero-left-content">
                         {/* <h5 className="section-subtitle">EMPOWERMENT</h5> */}
                         <h1 className="section-title fade-in">Empowering Future Technology, One Chip at a Time</h1>
                         <p>Silogix Nanosystems designs cutting-edge semiconductor chips, powering innovation across 
@@ -33,7 +33,7 @@ function HomeHero() {
                     </div>
                     {/* <!-- hero-section-left-end --> */}
                     {/* <!-- hero-section-right-start --> */}
-                    <div className="hero-empowerment-right-content">
+                    <div className="hero-right-content">
                         <div className="top-content">
                             <img className="desktop fade-in" src={bg1} alt="banner" />
                             <img className="mobile" src={bg1} alt="banner" />

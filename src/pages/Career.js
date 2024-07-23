@@ -6,6 +6,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function Career() {
+  document.title = "Career";
   const breadcrumbs = [{ label: "Home", link: "/" }, { label: "Careers" }];
   return (
     <>

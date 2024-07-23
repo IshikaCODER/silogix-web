@@ -8,7 +8,7 @@ function SubSection() {
     <>
       {/* <!-- subscription-section-start --> */}
         <div className="section subscribe-section">
-            <div className="container">
+            <div className="custom-container">
                 <div className="sub-section-wrap">
                     <div className="row">
                         <div className="col-xl-5 col-lg-8">

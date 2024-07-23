@@ -6,6 +6,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function Service() {
+  document.title = "Services";
   const breadcrumbs = [{ label: "Home", link: "/" }, { label: "Our Services" }];
   return (
     <>

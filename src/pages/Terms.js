@@ -5,6 +5,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function Terms() {
+  document.title = "Terms & Conditions";
   const breadcrumbs = [
     { label: "Home", link: "/" },
     { label: "Terms & Conditions" },

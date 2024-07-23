@@ -5,6 +5,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function BlogDescription() {
+  document.title = "Blog Description";
   const breadcrumbs = [
     { label: "Home", link: "/" },
     { label: "Blog Title Page" },

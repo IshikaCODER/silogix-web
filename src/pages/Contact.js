@@ -8,6 +8,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function Contact() {
+  document.title = "Contact Us";
   const [formData, setFormData] = useState({
     name: "",
     email: "",

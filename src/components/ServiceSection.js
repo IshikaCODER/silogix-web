@@ -12,7 +12,7 @@ function ServiceSection() {
     <>
       {/* <!-- home-service-area-start --> */}
         <div className="home-service-area">
-            <div className="container">
+            <div className="custom-container">
                 <div className="service-section">
                     {/* <!-- service-section-title-start --> */}
                     <div className="service-section-title">

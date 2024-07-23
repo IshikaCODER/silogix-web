@@ -39,6 +39,7 @@ const FAQItem = ({ question, answer, isCollapsible, isOpen, onToggle }) => {
 };
 
 const FAQ = () => {
+  document.title = "FAQ";
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [

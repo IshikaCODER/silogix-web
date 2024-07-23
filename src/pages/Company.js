@@ -8,8 +8,9 @@ import AboutFounder from "../components/AboutFounder";
 import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
-function AboutUs() {
-  const breadcrumbs = [{ label: "Home", link: "/" }, { label: "About Us" }];
+function Company() {
+  document.title = "Company";
+  const breadcrumbs = [{ label: "Home", link: "/" }, { label: "Company" }];
   return (
     <>
       <Banner bannerImage={banner} title="About Us" breadcrumbs={breadcrumbs} />
@@ -23,4 +24,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Company;

@@ -5,6 +5,7 @@ import SubSection from "../components/SubSection";
 import Banner from "../components/Banner";
 
 function Privacy() {
+  document.title = "Privacy Policy";
   const breadcrumbs = [
     { label: "Home", link: "/" },
     { label: "Policy Policy" },

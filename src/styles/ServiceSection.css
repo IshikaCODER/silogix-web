@@ -1,19 +1,20 @@
 /* service */
 
-.home-service-area{
+.home-service-area {
     background-color: #09172f;
     padding: 90px 0 90px 0;
 }
 
-.service-section .service-section-title{
+.service-section .service-section-title {
     color: var(--white);
     text-align: center;
     margin-bottom: 40px;
 }
 
-.service-section .service-section-title .service-title{
+.service-section .service-section-title .service-title {
     font-size: 40px;
     font-weight: 500px;
+    margin-bottom: 20px;
 }
 
 /* .service-section-title .title-underline{
@@ -23,76 +24,73 @@
     border-radius: 2px;
 } */
 
-.service-section .service-section-title .service-subtitle{
+.service-section .service-section-title .service-subtitle {
     font-size: 20px;
     margin-top: 10px;
+    color: var(--white);
 }
 
-.service-section .service-card-section{
+.service-section .service-card-section {
     display: flex;
     justify-content: center;
 }
 
-.service-section .service-card-section .card{
+.service-section .service-card-section .card {
     margin: 3px;
     transition: all 0.3s linear;
 }
 
-.service-section .service-card-section .service-card-1{
+.service-section .service-card-section .service-card-1 {
     height: 340px;
     width: 232px;
     margin-top: 30px;
 }
 
 .service-section .service-card-section .service-card-1 #serviceImg1,
-.service-section .service-card-section .service-card-5 #serviceImg5{
+.service-section .service-card-section .service-card-5 #serviceImg5 {
     height: 170px;
 }
 
-.service-section .service-card-section .service-card-2{
+.service-section .service-card-section .service-card-2 {
     height: 370px;
     width: 252px;
     margin-top: 15px;
 }
 
-.service-section .service-card-section .service-card-2 #serviceImg2{
+.service-section .service-card-section .service-card-2 #serviceImg2 {
     height: 160px;
 }
 
-.service-section .service-card-section .service-card-3{
+.service-section .service-card-section .service-card-3 {
     height: 400px;
     width: 292px;
 }
 
-.service-section .service-card-section .service-card-3 .service-icon{
-   margin-top: 5px;
-}
-
-.service-section .service-card-section .service-card-3 #serviceImg3{
+.service-section .service-card-section .service-card-3 #serviceImg3 {
     height: 210px;
 }
 
-.service-section .service-card-section .service-card-4{
+.service-section .service-card-section .service-card-4 {
     height: 370px;
     width: 252px;
     margin-top: 15px;
 }
 
-.service-section .service-card-section .service-card-4 #serviceImg4{
+.service-section .service-card-section .service-card-4 #serviceImg4 {
     height: 195px;
 }
 
-.service-section .service-card-section .service-card-5{
+.service-section .service-card-section .service-card-5 {
     height: 340px;
     width: 232px;
     margin-top: 30px;
 }
 
-.service-card-section .card .card-img-top{
+.service-card-section .card .card-img-top {
     width: 100%;
 }
 
-.service-card-section .card .card-body .card-title{
+.service-card-section .card .card-body .card-title {
     text-align: center;
     margin: 0 5px;
     margin-bottom: 5px;
@@ -100,38 +98,42 @@
     transition: all 0.3s linear;
 }
 
-.service-card-section .card .card-body .card-text{
+.service-card-section .card .card-body .card-text {
     font-size: 14px;
     margin-bottom: 0;
 }
 
-.service-card-section .card .service-icon{
+.service-card-section .card .service-icon {
     color: var(--dark1);
-    margin-left: 78%;
+    position: absolute;
+    top: 89%;
+    left: 78%;
 }
 
-.service-card-section .card .service-icon i{
+.service-card-section .card .service-icon i {
     font-size: 25px;
     transition: all 0.3s linear;
 }
+
 .service-card-section .card .service-icon:hover i {
     margin-left: 5px;
-  }
-
-.service-card-section .card{
-    transition: transform 0.3s, z-index 0.3s, box-shadow 0.3s; 
 }
 
-.service-card-section .card:hover{
+.service-card-section .card {
+    transition: transform 0.3s, z-index 0.3s, box-shadow 0.3s;
+}
+
+.service-card-section .card:hover {
     /* transform: scale(1.1); 
     z-index: 1;  */
-    box-shadow: 0px 0px 15px var(--primary_light0); 
+    box-shadow: 0px 0px 15px var(--primary_light0);
 }
 
 .service-card-section .card:hover .card-body .card-title,
-.service-card-section .card:hover .service-icon{
+.service-card-section .card:hover .service-icon {
     color: var(--primary_color2);
 }
+
 /* 
 .service-card-section .card:not(:hover) {
     transform: scale(1); 
@@ -139,20 +141,95 @@
 } */
 
 
-/* media queries */
-/* @media (max-width: 1200px) {
-    .service-section .service-card-section .service-card-1, 
+/* Responsive style */
+@media (max-width: 1200px) {
+
+    /* .service-card-section .card .card-body .card-text{
+        display: none;
+    } */
+    /* .service-section .service-card-section .service-card-1, 
     .service-section .service-card-section .service-card-2,
+    .service-section .service-card-section .service-card-3,
     .service-section .service-card-section .service-card-4, 
     .service-section .service-card-section .service-card-5{
-        height: 400px;
-        width: 292px;
+        height: 320px;
+        width: 250px;
         margin-top: 0;
+    } */
+    .service-section .service-card-section {
+        flex-wrap: wrap;
     }
-    .service-section .service-card-section .service-card-3 #serviceImg1,
-    .service-section .service-card-section .service-card-3 #serviceImg2,
-    .service-section .service-card-section .service-card-3 #serviceImg4,
-    .service-section .service-card-section .service-card-3 #serviceImg5{
+
+    .service-section .service-card-section .service-card-1,
+    .service-section .service-card-section .service-card-2,
+    .service-section .service-card-section .service-card-3,
+    .service-section .service-card-section .service-card-4,
+    .service-section .service-card-section .service-card-5 {
+        height: 450px;
+        margin: 0 10px;
+    }
+
+    .service-section .service-card-section .service-card-1,
+    .service-section .service-card-section .service-card-2 {
+        width: 44%;
+        margin: 0 25px 20px 25px;
+    }
+
+    .service-section .service-card-section .service-card-3,
+    .service-section .service-card-section .service-card-4,
+    .service-section .service-card-section .service-card-5 {
+        width: 30%;
+    }
+
+    .service-section .service-card-section .service-card-1 #serviceImg1,
+    .service-section .service-card-section .service-card-2 #serviceImg2,
+    .service-section .service-card-section .service-card-3 #serviceImg3,
+    .service-section .service-card-section .service-card-4 #serviceImg4,
+    .service-section .service-card-section .service-card-5 #serviceImg5 {
         height: 60%;
     }
-} */
+
+    .service-card-section .card .card-body {
+        padding: 25px;
+    }
+
+    .service-card-section .card .card-body .card-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-section .service-card-section .card{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .service-section .service-card-section .service-card-1,
+    .service-section .service-card-section .service-card-2,
+    .service-section .service-card-section .service-card-3,
+    .service-section .service-card-section .service-card-4,
+    .service-section .service-card-section .service-card-5 {
+        height: 200px;
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .service-section .service-card-section .service-card-1 #serviceImg1,
+    .service-section .service-card-section .service-card-2 #serviceImg2,
+    .service-section .service-card-section .service-card-3 #serviceImg3,
+    .service-section .service-card-section .service-card-4 #serviceImg4,
+    .service-section .service-card-section .service-card-5 #serviceImg5{
+        height: 100%;
+        width: 40%;
+    }
+
+    .service-section .service-card-section .service-card-2 #serviceImg2{
+        width: 58%;
+    }
+
+    .service-card-section .card .service-icon {
+        position: absolute;
+        top: 80%;
+        left: 90%;
+    }
+}

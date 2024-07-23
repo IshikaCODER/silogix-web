@@ -11,7 +11,6 @@
 
 .subscribe-section .sub-section-wrap .row{
     align-items: center;
-    text-align: center;
 }
 
 .sub-section-wrap .sub-content p{
@@ -55,28 +54,36 @@
 }
 
 
-/* media queries */
+/* Responsive style */
 
-/* @media (max-width: 1200px){
+@media (max-width: 1200px){
     .subscribe-section .sub-section-wrap .row{
         flex-direction: column;
         gap: 35px;
         align-items: start;
+        text-align: center;
     }
     .sub-section-wrap .sub-input-area .sub-input{
-        width: 700px;
+        width: 750px;
         padding-left: 60px;
     }
 }
 
 @media (max-width: 991px){
+    .sub-section-wrap .sub-content p{
+        text-align: start;
+    }
     .sub-section-wrap .sub-input-area .sub-input{
-        width: 500px;
+        width:  100%;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 699px){
     .sub-section-wrap .sub-input-area .sub-input{
-        width: 400px;
+        flex-direction: column;
+        gap: 20px;
     }
-} */
+    .sub-section-wrap .sub-input-area .sub-input .sub-btn{
+        text-align: end;
+    }
+}

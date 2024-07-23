@@ -57,7 +57,7 @@ const Navbar = () => {
                                         <Link to="/">Home</Link>
                                     </li>
                                     <li className="mega-menu-item">
-                                        <Link to="/about">Company</Link>
+                                        <Link to="/company">Company</Link>
                                     </li>
                                     <li className="dropdown-menu-item">
                                         <Link to="/service">Services</Link>

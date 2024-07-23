@@ -32,7 +32,7 @@ function Values() {
               <div className="row justify-content-center">
                 <div
                   className="icon-box-wrapper col-xl-6 col-lg-6"
-                  id="icon-box-1"
+                  id="iconBox1"
                 >
                   <div className="icon-box">
                     <div className="icon-color-style">
@@ -57,7 +57,7 @@ function Values() {
                 {/* <!-- icon-box-start --> */}
                 <div
                   className="icon-box-wrapper col-xl-6 col-lg-6"
-                  id="icon-box-2"
+                  id="iconBox2"
                 >
                   <div className="icon-box">
                     <div className="icon-color-style">
@@ -83,7 +83,7 @@ function Values() {
               <div className="row justify-content-center">
                 <div
                   className="icon-box-wrapper col-xl-6 col-lg-6"
-                  id="icon-box-3"
+                  id="iconBox3"
                 >
                   <div className="icon-box">
                     <div className="icon-color-style">
@@ -107,7 +107,7 @@ function Values() {
                 {/* <!-- icon-box-start --> */}
                 <div
                   className="icon-box-wrapper col-xl-6 col-lg-6"
-                  id="icon-box-4"
+                  id="iconBox4"
                 >
                   <div className="icon-box">
                     <div className="icon-color-style">
