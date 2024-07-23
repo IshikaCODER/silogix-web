@@ -40,9 +40,7 @@ function AboutNumbers() {
     return (
         <>
             <div className="about-section-wrapper">
-                {/* <!-- about-number-section-start --> */}
                 <div className="about-number-area">
-                    {/* <!-- number-cards-start --> */}
                     <div className="number-section">
                         {numbers.map((number) => (
                             <div key={number.label} className="num-card col-sm-3">
@@ -51,18 +49,14 @@ function AboutNumbers() {
                             </div>
                         ))}
                     </div>
-                    {/* <!-- number-cards-end --> */}
                 </div>
-                {/* <!-- about-number-section-end --> */}
-                {/* <!-- about-video-section-start --> */}
                 <div className="video-section">
                     <h1 className="video-title">Take A Vital Look At <br/><span className="colored-title">Our Working</span></h1>
                     <video src={videoUrl} controls loop muted className="about-video"></video>
                 </div>
-                {/* <!-- about-video-section-end --> */}
             </div>
         </>
-    )
+    );
 }
 
 export default AboutNumbers;

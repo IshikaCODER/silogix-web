@@ -1,9 +1,8 @@
-/* quote */
-.about-quote-area{
+.about-quote-area {
     padding-top: 90px;
 }
 
-.about-quote-area .about-quote-section{
+.about-quote-area .about-quote-section {
     padding: 65px 95px;
     align-content: center;
     background-image: url(../assets/imgage.webp);
@@ -12,14 +11,45 @@
     border-radius: 8px;
 }
 
-.about-quote-section h3{
+.about-quote-section h3 {
     color: var(--white);
     text-align: center;
     margin-bottom: 20px;
 }
 
-.about-quote-section h5{
+.about-quote-section h5 {
     color: var(--gray);
     text-align: end;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-quote-area .about-quote-section {
+        padding: 40px 50px;
+    }
+
+    .about-quote-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .about-quote-section h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-quote-area .about-quote-section {
+        padding: 20px 30px;
+    }
+
+    .about-quote-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .about-quote-section h5 {
+        font-size: 14px;
+        text-align: center;
+    }
+}

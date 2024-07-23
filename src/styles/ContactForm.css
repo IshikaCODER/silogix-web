@@ -4,6 +4,13 @@
    overflow: hidden;
    margin-left: 110px;
  }
+
+ .error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+
  .contact-section .contact-wrap .contact-form .contact-form-wrap {
    padding: 55px 40px;
  }
