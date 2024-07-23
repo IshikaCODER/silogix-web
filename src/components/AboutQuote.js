@@ -6,7 +6,7 @@ function AboutQuote() {
     <>
       {/* about-quote-area-start */}
       <div className="about-quote-area">
-        <div className="container">
+        <div className="container-lg">
           {/* about-quote-section-start */}
           <div className="about-quote-section">
             <h3>"I would say that hardware is the bone of the head, the skull. The semiconductor is the brain

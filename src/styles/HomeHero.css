@@ -258,3 +258,18 @@
 }
 
 
+
+/* media queries */
+
+/* @media (max-width: 1200px) {
+    .hero-empowerment-area .custom-row {
+        align-items: flex-start !important;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1139px) {
+    .hero-empowerment-area .custom-row {
+        flex-direction: column;
+    }
+} */

@@ -10,7 +10,7 @@ function SubSection() {
         <div className="section subscribe-section">
             <div className="container">
                 <div className="sub-section-wrap">
-                    <div className="row align-items-center">
+                    <div className="row">
                         <div className="col-xl-5 col-lg-8">
                             <div className="sub-content">
                                 <div className="sub-icon">

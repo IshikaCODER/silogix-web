@@ -137,3 +137,22 @@
     transform: scale(1); 
     z-index: 0;
 } */
+
+
+/* media queries */
+/* @media (max-width: 1200px) {
+    .service-section .service-card-section .service-card-1, 
+    .service-section .service-card-section .service-card-2,
+    .service-section .service-card-section .service-card-4, 
+    .service-section .service-card-section .service-card-5{
+        height: 400px;
+        width: 292px;
+        margin-top: 0;
+    }
+    .service-section .service-card-section .service-card-3 #serviceImg1,
+    .service-section .service-card-section .service-card-3 #serviceImg2,
+    .service-section .service-card-section .service-card-3 #serviceImg4,
+    .service-section .service-card-section .service-card-3 #serviceImg5{
+        height: 60%;
+    }
+} */

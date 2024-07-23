@@ -4,7 +4,7 @@
 }
 
 .founder-section .founder-section-title .founder-title{
-    margin: 0 250px 10px 250px;
+    margin-bottom: 10px;
     color: var(--dark1);
     text-align: center;
 }
@@ -16,7 +16,7 @@
 
 .founder-section .founder-section-title .founder-content{
     text-align: center;
-    margin: 0 320px 48px 320px;
+    margin-bottom: 48px;
     padding-top: 10px;
 }
 
@@ -151,3 +151,20 @@
 .founder-img .card .card-body .card-icons .social-icon:hover{
     background-color: var(--dark1);
 }
+
+
+
+
+
+/* media queries */
+
+/* @media (max-width: 1200px) {
+    .founder-img-area{
+        flex-wrap: wrap;
+    }
+    .founder-img .card{
+        height: 750px;
+        width: 700px;
+        border-color: var(--gray);
+    }    
+} */

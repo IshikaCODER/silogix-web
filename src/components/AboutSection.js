@@ -32,12 +32,12 @@ function AboutSection() {
                   {/* <!-- about-section-img-start --> */}
                   <div className="section-img">
                       <div className="img-area">
-                          <img src={img1} className="about-img" id="about-img-1" alt=""/>
-                          <img src={img2} className="about-img" id="about-img-2" alt=""/>
+                          <img src={img1} className="about-img" id="aboutImg1" alt=""/>
+                          <img src={img2} className="about-img" id="aboutImg2" alt=""/>
                       </div>
                       <div className="img-area">
-                          <img src={img3} className="about-img" id="about-img-3" alt=""/>
-                          <img src={img4} className="about-img" id="about-img-4" alt=""/>
+                          <img src={img3} className="about-img" id="aboutImg3" alt=""/>
+                          <img src={img4} className="about-img" id="aboutImg4" alt=""/>
                       </div>
                   </div>
                   {/* <!-- about-section-img-end --> */}

@@ -111,3 +111,18 @@
   .insight-card-section .card:hover .card-body{
     color: var(--primary_color2);
   }
+
+
+  /* media queries */
+  /* @media (max-width: 1200px){
+    .home-insight-area .home-insight-section{
+        gap: 95px;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .home-insight-area .home-insight-section{
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+  } */

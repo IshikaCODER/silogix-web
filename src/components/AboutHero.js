@@ -7,7 +7,7 @@ function AboutHero() {
   return (
     <>
       {/* <!-- Page Banner Start --> */}
-      <div className="page-banner-section" style={{backgroundImage: `url(${banner})`}}>
+      <div className="page-banner-section flow" style={{backgroundImage: `url(${banner})`}}>
             <div className="container">
                 <div className="page-banner-wrap">
                     <div className="row">

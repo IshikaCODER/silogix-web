@@ -42,6 +42,10 @@ a, button, img, input {
     width: 100%;
 }
 
+.flow{
+    overflow: hidden;
+}
+
 /* Varialbes */
 :root {
     /* --bodycolor: */
@@ -106,42 +110,6 @@ a, button, img, input {
     gap: 63px;
 }
 
-.header-area .header-left .header-left-right {
-    display: none;
-    align-items: center;
-    gap: 8px;
-}
-
-.header-area .header-left .menu-bar {
-    display: none;
-    width: 53px;
-    height: 53px;
-    text-align: center;
-    line-height: 53px;
-    font-size: 26px;
-    border-radius: 10px;
-    transition: .3s;
-    color: var(--dark1);
-    background: rgb(19 81 216 / 10%);
-    color: var(--primary_color);
-}
-
-.header-area .navbar-wrapper .close-menu-bar {
-    display: none;
-    position: absolute;
-    right: 80px;
-    top: 20px;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-    border-radius: 50%;
-    border: 1px solid rgb(28 28 28 / 10%);
-    font-size: 20px;
-    cursor: pointer;
-    transition: .3s;
-}
-
 .header-area .navbar-wrapper > ul {
     display: flex;
     align-items: center;
@@ -155,11 +123,6 @@ a, button, img, input {
 .header-area .navbar-wrapper ul li .dropdown-menu-item a,
 .header-area .navbar-wrapper ul li .mega-menu-item a {
     padding-right: 16px;
-}
-
-.header-area .navbar-wrapper .close-menu-bar:hover {
-    color: red;
-    border-color: red;
 }
 
 .header-area .navbar-wrapper > ul > li > ul {
@@ -371,10 +334,190 @@ a, button, img, input {
     transition: .3s;
 }
 
-
-
-
 .header-area .header-contact-info .theme-btn {
     padding: 10px 19px;
     font-size: 14px;
 }
+
+
+/* mobile navbar */
+
+
+.header-area .header-left-right {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-area .header-left-right .menu-bar {
+    display: none;
+    width: 53px;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    font-size: 26px;
+    border-radius: 10px;
+    transition: .3s;
+    color: var(--dark1);
+    background: rgb(19 81 216 / 10%);
+    color: var(--primary_color);
+}
+
+.header-area .navbar-wrapper .close-menu-bar {
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgb(28 28 28 / 10%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-area .header-left-right .close-menu-bar:hover {
+    color: red;
+    border-color: red;
+}
+
+/* media queries */
+/* @media (max-width: 1200px) {
+    .custom-container {
+        padding: 0 30px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .header-area {
+        padding: 10px 0;
+    }
+    .header-area .navbar-wrapper ul li .mega-menu {
+        width: 100%;
+        left: 0;
+        box-shadow: none;
+    }
+    .header-area .navbar-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow-x: hidden;
+        top: 0;
+        z-index: 9999;
+        background: rgb(28 28 28 / 50%);
+        padding: 70px 84px 70px 60px;
+        transition: .3s;
+        display: block !important;
+    }
+    .header-area .header-right{
+        display: none;
+    }
+    .header-area .navbar-wrapper.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header-area .navbar-wrapper::before {
+        content: '';
+        position: fixed;
+        width: calc(100% - 60px);
+        height: 100%;
+        background: #ffffff;
+        left: -70px;
+        top: 0;
+        transition: .3s;
+    }
+    .header-area .navbar-wrapper.active::before {
+        left: 0;
+    }
+    .header-area .navbar-wrapper > ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .header-area .navbar-wrapper > ul > li {
+        line-height: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #D2D2D2;
+        padding: 5px 0;
+        z-index: 9;
+        min-height: 46px;
+    }
+    .header-area .navbar-wrapper > ul > li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .header-area .navbar-wrapper ul li.mega-menu-item > a:after, 
+    .header-area .navbar-wrapper ul li.dropdown-menu-item > a:after {
+        display: none;
+    }
+    .header-area .navbar-wrapper ul li.dropdown-menu-item a, 
+    .header-area .navbar-wrapper ul li.mega-menu-item a {
+        padding-right: 0;
+    }
+    .header-area .header-left {
+        flex: 1;
+        justify-content: space-between;
+        padding-right: 40px;
+        gap: 20px;
+    }
+    .header-area .navbar-wrapper ul li > .dropdown-menu,
+    .header-area .navbar-wrapper ul li .dropdown-menu-item-icon,
+    .header-area .navbar-wrapper .close-menu-bar,
+    .header-area .header-left .menu-bar {
+        display: block;
+    }
+    .header-area .header-left .header-left-right {
+        display: flex;
+    }
+    .header-area .navbar-wrapper ul li > .dropdown-menu {
+        width: 100%;
+        position: relative;
+        box-shadow: none;
+        max-height: 0;
+        overflow-x: hidden;
+        padding: 0px 35px 0px 15px;
+        border: none;
+    }
+    .header-area .navbar-wrapper ul li > .dropdown-menu li a {
+        font-size: 16px;
+        display: block;
+        padding-top: 12px;
+        margin: 7px 0;
+    }
+    .header-area .navbar-wrapper ul li > .dropdown-menu li:last-child a {
+        margin-top: 0;
+        padding-bottom: 12px;
+    }
+    .header-area .navbar-wrapper > ul > li.active > .dropdown-menu {
+        max-height: 400px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .header-area .navbar-wrapper ul li .mega-menu {
+        position: relative;
+        max-height: 0;
+        overflow-x: hidden;
+        border: none;
+        height: auto;
+    }
+    .header-area .navbar-wrapper ul > li.active {
+        padding-bottom: 20px;
+    }
+    .header-area .navbar-wrapper ul > li.active > .mega-menu {
+        max-height: 2000px;
+        opacity: 1;
+        visibility: visible;
+    }
+} */

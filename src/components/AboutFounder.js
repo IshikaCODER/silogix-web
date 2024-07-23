@@ -14,10 +14,10 @@ function AboutFounder() {
                         {/* <!-- founder-section-title-start --> */}
                         <div className="founder-section-title">
                             <div className="founder-title">
-                                <h1>Crafting an Exciting Future <span className="colored-title">Journey Fueled by Innovation</span></h1>
+                                <h1>Crafting an Exciting Future <br/><span className="colored-title">Journey Fueled by Innovation</span></h1>
                             </div>
                             <div className="founder-content">
-                                <p>Embracing Tomorrow, Today Discover how our commitment to innovation is shaping a brighter
+                                <p>Embracing Tomorrow, Today <br/>Discover how our commitment to innovation is shaping a brighter
                                     future for all.
                                 </p>
                             </div>

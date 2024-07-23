@@ -4,7 +4,7 @@
 
 .about-goal-section{
     padding: 8px;
-    /* background: var(--primary_light0); */
+    /* background: var(--primary_light0); */ 
     border: 1px solid var(--gray);
     border-radius: 8px;
     display: flex;
@@ -44,3 +44,32 @@
     border-radius:0 8px 8px 0;
 }
 
+/* media queries */
+/* @media (max-width: 991px) {
+    .about-goal-section{
+        border: none;
+        padding: 0;
+    }
+    .mission-section, .vision-section{
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+        padding: 8px;
+        padding-bottom: 50px;
+    }
+    .mission-section{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .mission-section .mission-img .goal-img{
+        border-radius: 8px 8px 0 0;
+    }
+    .vision-section{
+        flex-direction: column-reverse;
+    }
+    .vision-section .vision-img .goal-img{
+        border-radius: 8px 8px 0 0;
+    }
+    .about-goal-section .goal-section .goal-content{
+        margin-top: 30px;
+    }
+} */

@@ -45,7 +45,7 @@ function AboutNumbers() {
                     {/* <!-- number-cards-start --> */}
                     <div className="number-section">
                         {numbers.map((number) => (
-                            <div key={number.label} className="num-card">
+                            <div key={number.label} className="num-card col-sm-3">
                                 <h1>{number.value}+</h1>
                                 <p>{number.label}</p>
                             </div>
@@ -56,7 +56,7 @@ function AboutNumbers() {
                 {/* <!-- about-number-section-end --> */}
                 {/* <!-- about-video-section-start --> */}
                 <div className="video-section">
-                    <h1 className="video-title">Take A Vital Look At <span className="colored-title">Our Working</span></h1>
+                    <h1 className="video-title">Take A Vital Look At <br/><span className="colored-title">Our Working</span></h1>
                     <video src={videoUrl} controls loop muted className="about-video"></video>
                 </div>
                 {/* <!-- about-video-section-end --> */}

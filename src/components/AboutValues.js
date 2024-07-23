@@ -6,12 +6,12 @@ function Values() {
     <>
       {/* <!-- about-values-section-start --> */}
         <div className="about-values-area">
-            <div className="container">
+            <div className="container-md">
                 <div className="values-section">
                     {/* <!-- values-section-title-start --> */}
                     <div className="values-section-title">
                         <div className="values-title">
-                            <h1>Driving Innovation with Values in <span className="colored-title">Our Startup World</span></h1>
+                            <h1>Driving Innovation with Values in <br/><span className="colored-title">Our Startup World</span></h1>
                         </div>
                         <div className="values-content">
                             <p>We're driven by a set of core values that shape our culture, guide 
@@ -25,7 +25,7 @@ function Values() {
                     <div className="values-section-content">
                         {/* <!-- icon-box-start --> */}
                         <div className="row justify-content-center">
-                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="icon-box-1">
+                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="iconBox1">
                                 <div className="icon-box">
                                     <div className="icon-color-style">
                                         <i class="fa-solid fa-lightbulb"></i>
@@ -43,7 +43,7 @@ function Values() {
                             </div>
                             {/* <!-- icon-box-end --> */}
                             {/* <!-- icon-box-start --> */}
-                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="icon-box-2">
+                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="iconBox2">
                                 <div className="icon-box">
                                     <div className="icon-color-style">
                                         <i className="fa-solid fa-puzzle-piece"></i>
@@ -63,7 +63,7 @@ function Values() {
                         </div>
                         {/* <!-- icon-box-start --> */}
                         <div className="row justify-content-center">
-                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="icon-box-3">
+                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="iconBox3">
                                 <div className="icon-box">
                                     <div className="icon-color-style">
                                         <i class="fa-solid fa-handshake"></i>
@@ -75,14 +75,14 @@ function Values() {
                                     </div>
                                     <div className="icon-description">
                                         <p>We believe in the power of collaboration, working closely with 
-                                            our partners, clients, and stakeholders to achieve shared goals and drive 
+                                            our partners, clients, & stakeholders to achieve shared goals & drive 
                                             collective success.</p>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- icon-box-end --> */}
                             {/* <!-- icon-box-start --> */}
-                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="icon-box-4">
+                            <div className="icon-box-wrapper col-xl-6 col-lg-6" id="iconBox4">
                                 <div className="icon-box">
                                     <div className="icon-color-style">
                                         <i className="fa-solid fa-hand-holding-heart"></i>

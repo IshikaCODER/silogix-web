@@ -15,7 +15,7 @@ function HomeHero() {
   return (
     <>
         {/* <!-- Hero-section-start --> */}
-        <section className="hero-empowerment-area">
+        <section className="hero-empowerment-area flow">
             <div className="custom-container">
                 <div className="custom-row align-items-center">
                     {/* <!-- hero-section-left-start --> */}

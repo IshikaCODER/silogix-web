@@ -7,8 +7,8 @@ function AboutGoals() {
   return (
     <>
       {/* <!-- about-mission-vission-area-start --> */}
-      <div className="about-goal-area">
-          <div className="container">
+      <div className="about-goal-area flow">
+          <div className="container-md">
               <div className="about-goal-section">
                   {/* <!-- mission-section-start --> */}
                   <div className="mission-section goal-section">
