@@ -16,7 +16,7 @@ function SubSection() {
                                 <div className="sub-icon">
                                     <img src={icon} className="sub-icon-img" alt/>
                                 </div>
-                                <p>Subscribe to our newsletter</p>
+                                <p>Subscribe to our newsletters</p>
                             </div>
                         </div>
                         <div className="col-xl-7 col-lg-4">
