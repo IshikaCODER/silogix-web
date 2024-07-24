@@ -143,10 +143,6 @@
 
 /* Responsive style */
 @media (max-width: 1200px) {
-
-    /* .service-card-section .card .card-body .card-text{
-        display: none;
-    } */
     /* .service-section .service-card-section .service-card-1, 
     .service-section .service-card-section .service-card-2,
     .service-section .service-card-section .service-card-3,
@@ -231,5 +227,34 @@
         position: absolute;
         top: 80%;
         left: 90%;
+    }
+}
+
+@media (max-width: 585px) {
+    /* .service-card-section .card .card-body .card-text{
+        display: none;
+    } */
+    .service-section .service-card-section .card{
+        flex-direction: column;
+    }
+    .service-section .service-card-section .service-card-1 #serviceImg1,
+    .service-section .service-card-section .service-card-2 #serviceImg2,
+    .service-section .service-card-section .service-card-3 #serviceImg3,
+    .service-section .service-card-section .service-card-4 #serviceImg4,
+    .service-section .service-card-section .service-card-5 #serviceImg5{
+        height: 50%;
+        width: 100%;
+    }
+    .service-section .service-card-section .service-card-1,
+    .service-section .service-card-section .service-card-2,
+    .service-section .service-card-section .service-card-3,
+    .service-section .service-card-section .service-card-4,
+    .service-section .service-card-section .service-card-5 {
+        height: 300px;
+    }
+    .service-card-section .card .service-icon {
+        position: absolute;
+        top: 88%;
+        left: 85%;
     }
 }

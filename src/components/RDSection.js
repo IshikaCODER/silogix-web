@@ -15,10 +15,10 @@ function RDSection() {
               <div className="research-section custom-row align-items-center">
                   {/* <!-- research-section-img-start --> */}
                   <div className="section-img">
-                      <div className="img-area">
+                      <div className="rd-img-area">
                           <img src={img1} className="rd-img" id="rdImg1" alt=""/>
                       </div>
-                      <div className="img-area">
+                      <div className="rd-img-area">
                           <img src={img2} className="rd-img" id="rdImg2" alt=""/>
                           <img src={img3} className="rd-img" id="rdImg3" alt=""/>
                       </div>

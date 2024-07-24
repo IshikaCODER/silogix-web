@@ -36,7 +36,7 @@
     /* padding: 20px; */
 }
 
-.section-img .img-area .about-img, .section-img .img-area .rd-img{
+.section-img .img-area .about-img, .section-img .rd-img-area .rd-img{
     margin: 1px;
 }
 
@@ -62,17 +62,17 @@
     width: 190px;
 } 
 
-.section-img .img-area #rdImg1{
+.section-img .rd-img-area #rdImg1{
     height: 357px;
     width: 258px;
 }
 
-.section-img .img-area #rdImg2{
+.section-img .rd-img-area #rdImg2{
     height: 182px;
     width: 200px;
 }
 
-.section-img .img-area #rdImg3{
+.section-img .rd-img-area #rdImg3{
     height: 172px;
     width: 235px;
 }
@@ -90,11 +90,11 @@
         width: 230px;
         margin: 1px;
     }
-    .section-img .img-area #rdImg1{
+    .section-img .rd-img-area #rdImg1{
         height: 360px;
         width: 258px;
     }    
-    .section-img .img-area #rdImg2, .section-img .img-area #rdImg3{
+    .section-img .rd-img-area #rdImg2, .section-img .rd-img-area #rdImg3{
         height: 180px;
         width: 190px;
     }
@@ -107,7 +107,7 @@
     .research-section-area .research-section{
         flex-direction: column;
     }
-    .section-img .img-area{
+    .section-img .img-area, .section-img .rd-img-area{
         display: flex;
         flex-direction: column;
     }
@@ -115,13 +115,35 @@
     .section-img .img-area #aboutImg3, .section-img .img-area #aboutImg4{
         height: 170px;
     }
-    .section-img .img-area #rdImg1{
+    .section-img .rd-img-area #rdImg1{
         height: 340px;
     }    
-    .section-img .img-area #rdImg2, .section-img .img-area #rdImg3{
+    .section-img .rd-img-area #rdImg2, .section-img .rd-img-area #rdImg3{
         height: 170px;
     }
     .about-section-area .about-section, .research-section-area .research-section{
         gap: 50px;
+    }
+}
+
+@media (max-width: 585px) {
+    .section-img .img-area:first-child{
+        align-items: end;
+    }
+    .section-img .img-area #aboutImg1, .section-img .img-area #aboutImg2, 
+    .section-img .img-area #aboutImg3, .section-img .img-area #aboutImg4{
+        height: 150px;
+        width: 100%;
+    }
+    .section-img .rd-img-area:first-child{
+        width: 70%;
+    }
+    .section-img .rd-img-area #rdImg1{
+        height: 300px;
+        width: 99%;
+    }    
+    .section-img .rd-img-area #rdImg2, .section-img .rd-img-area #rdImg3{
+        height: 150px;
+        width: 100%;
     }
 }

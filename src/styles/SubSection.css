@@ -3,7 +3,6 @@
 .sub-section-wrap{
     position: relative;
     border-radius: 10px;
-    padding: 55px 105px;
     margin-bottom: -90px;
     padding: 70px 105px;
     background: linear-gradient(270deg, #a824b4 0%, #0dbeeb  100%);
@@ -82,8 +81,21 @@
     .sub-section-wrap .sub-input-area .sub-input{
         flex-direction: column;
         gap: 20px;
+        padding-left: 0;
     }
     .sub-section-wrap .sub-input-area .sub-input .sub-btn{
         text-align: end;
     }
+    .sub-section-wrap{
+        padding: 90px;
+        padding-bottom: 70px;
+    }
 }
+
+@media (max-width: 559px){
+    .sub-section-wrap{
+        padding: 40px;
+        padding-top: 90px;
+    }
+}
+
