@@ -31,3 +31,20 @@ img {
   margin-bottom: 0;
 }
 
+
+
+
+/* Responsive style */
+
+@media (max-width: 1200px) {
+  .contact-info-section .contact-info-wrap .single-contact-info {
+      padding: 50px 40px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info-section{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

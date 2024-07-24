@@ -1,6 +1,6 @@
-.ptb-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.ptb-90 {
+    padding-top: 90px;
+    padding-bottom: 60px;
 }
 
 .career-section-title h2 {
@@ -36,4 +36,16 @@
 }
 p:last-child {
     margin-bottom: 0;
+}
+
+
+
+
+/* Responsive style */
+
+@media (max-width: 576px) {
+    .apply-process-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

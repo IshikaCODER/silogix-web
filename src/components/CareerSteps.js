@@ -5,7 +5,7 @@ function CareerSteps() {
   return (
     <>
         {/* <!-- applying-section-start --> */}
-        <section className="apply-process-section ptb-100">
+        <section className="apply-process-section ptb-90">
             <div className="container">
                 {/* <!-- career-title-start --> */}
                 <div className="career-section-title text-center mb-5">

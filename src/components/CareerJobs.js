@@ -75,8 +75,8 @@ function CareerJobs() {
     return (
         <>
             {/* <!-- jobs-section-start --> */}
-            <div className="find-jobs-area pt-100 pb-70">
-                <div className="container">
+            <div className="find-jobs-area pt-45 pb-70">
+                <div className="container-md">
                     {/* <!-- career-title-start --> */}
                     <div className="career-section-title text-center">
                         <h2>Find <span className="fw-bold text-f1">Your Dream Job</span></h2>
@@ -89,7 +89,7 @@ function CareerJobs() {
                         {jobData.map((job, index) => (
                             <div className="col-lg-12" key={index}>
                                 <div className="find-jobs-card d-flex align-items-center">
-                                    <div className="find-jobs-img col-xl-3">
+                                    <div className="find-jobs-img col-xl-3 col-sm-4">
                                         <img className="w-75"
                                             src={job.imgSrc.src}
                                             alt={job.imgSrc.alt} />

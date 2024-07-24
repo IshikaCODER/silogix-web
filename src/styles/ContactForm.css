@@ -188,3 +188,25 @@
   width: 70%;
 }
  
+
+
+/* Responsive style */
+
+@media (max-width: 1200px) {
+  .contact-section .contact-wrap .contact-form {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-section .contact-wrap .contact-form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-section{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

@@ -6,7 +6,7 @@ function TermsContent() {
         <>
             {/* <!-- policy-section-start --> */}
             <div className="policy-section">
-                <div className="container">
+                <div className="container-md">
                     <div className="policy-section-wrapper">
                         {/* <!-- policy-title-section-start --> */}
                         <div className="policy-title-section">

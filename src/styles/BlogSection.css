@@ -133,3 +133,12 @@
   .blog-card .blog-btn .blog-btn-link:hover i {
     margin-left: 5px;
   }
+
+
+/* Responsive style */
+  @media (max-width: 576px) {
+    .blog-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }

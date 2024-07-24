@@ -7,8 +7,8 @@
 .pt-45 {
     padding-top: 45px;
 }
-.pt-100 {
-    padding-top: 100px;
+.pt-45 {
+    padding-top: 45px;
 }
 .find-jobs-card {
     background-color: var(--white);
@@ -183,3 +183,35 @@
     letter-spacing: 0.25px;
     border-color: var(--dark1);
 }
+
+
+
+/* Responsive style */
+
+@media (max-width: 768px) {
+    .find-jobs-card .find-jobs-img{
+        margin: 0 0 30px 0;
+    }
+    .find-jobs-card .find-jobs-btn {
+        position: inherit;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        margin-top: 17px;
+        align-self: start;
+    }
+    .find-jobs-card.d-flex {
+        flex-direction: column;
+    }
+    .find-jobs-area{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* .find-jobs-card .find-jobs-img{
+        align-self: start;
+    } */
+}
+
