@@ -142,6 +142,10 @@
         margin: 0 70px 48px 70px;
         font-size: 14px;
     }
+    .icon-box-wrapper .icon-box{
+        margin-right: 20px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -154,4 +158,11 @@
         margin: 0 40px 48px 40px;
         font-size: 12px;
     }
+}
+
+@media (max-width: 480px) {
+    .values-section-content .icon-box-wrapper{
+        padding: 22px;
+    }
+
 }

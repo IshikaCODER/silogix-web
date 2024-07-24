@@ -1,38 +1,25 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
-    // const [isMobile, setIsMobile] = useState(false);
-    // const [isOpen, setIsOpen] = useState(false);
+    
+    const [isOpen, setIsOpen] = useState(false);
+    const [isServiceOpen, setIsServiceOpen] = useState(false);
 
-    // const handleIsResize = () => {
-    //     if (window.innerWidth <= 768) {
-    //         setIsMobile(true);
-    //     } else {
-    //         setIsMobile(false);
-    //         setIsOpen(false);
-    //     }
-    // };
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
-    // useEffect(() => {
-    //     window.addEventListener('resize', handleIsResize);
-    //     handleIsResize();
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleIsResize);
-    //     };
-    // }, []);
-
-    // const toggleMenu = () => {
-    //     setIsOpen(!isOpen);
-    // };
+    const toggleServiceMenu = () => {
+        setIsServiceOpen(!isServiceOpen);
+      };
 
     return (
         <>
             {/* <!-- Header-start --> */}
-            <header className="header-area flow">
+            <header className="header-area">
                 <div className="custom-container">
                     <div className="custom-row align-items-center justify-content-between">
                         <div className="header-left d-flex align-items-center">
@@ -42,14 +29,14 @@ const Navbar = () => {
                             </Link>
                             <div className="header-left-right">
                                 {/* <Link to="/contact" className="theme-btn">Contact Us</Link> */}
-                                <span className="menu-bar">
+                                <span className="menu-bar" onClick={toggleMenu}>
                                     <i className="fa-solid fa-bars"></i>
                                 </span>
                             </div>
                             {/* <!-- header-logo-end --> */}
                             {/* <!-- navbar-start --> */}
-                            <nav className="navbar-wrapper">
-                                <span className="close-menu-bar">
+                            <nav className={`navbar-wrapper ${isOpen ? 'open' : ''}`}>
+                                <span className="close-menu-bar"  onClick={toggleMenu}>
                                     <i className="fa-solid fa-xmark"></i>
                                 </span>
                                 <ul>
@@ -59,12 +46,12 @@ const Navbar = () => {
                                     <li className="mega-menu-item">
                                         <Link to="/company">Company</Link>
                                     </li>
-                                    <li className="dropdown-menu-item">
+                                    <li className="dropdown-menu-item"  onClick={toggleServiceMenu}>
                                         <Link to="/service">Services</Link>
-                                        <span className="dropdown-menu-item-icon">
+                                        <span className="dropdown-menu-item-icon" onClick={toggleServiceMenu}>
                                             <i className="fa-solid fa-caret-down"></i>
                                         </span>
-                                        <ul className="dropdown-menu">
+                                        <ul className={`dropdown-menu ${isServiceOpen ? 'open' : ''}`}>
                                             <li>
                                                 <Link to="/service">Memory Compiler Design</Link>
                                             </li>
