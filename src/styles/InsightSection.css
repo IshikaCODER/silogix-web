@@ -135,3 +135,15 @@
         padding: 13px 39%;
     }
   }
+
+  @media (max-width: 576px){
+    .insight-card-section-2 .theme-btn{
+        padding: 13px 37%;
+    }
+  }
+
+  @media (max-width:390px){
+    .insight-card-section-2 .theme-btn{
+        padding: 13px 30%;
+    }
+  }

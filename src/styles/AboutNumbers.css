@@ -48,6 +48,7 @@
     color: var(--dark1);
     text-align: center;
     max-width: 90%;
+    align-self: center;
 }
 
 .about-section-wrapper .video-section .video-title .colored-title {
@@ -65,15 +66,23 @@
 }
 
 /* Responsive Adjustments */
+
+@media (max-width: 992px) {
+    .number-section .num-card {
+        width: 50%;
+    }
+
+}
+
 @media (max-width: 768px) {
     .number-section .num-card {
         padding-right: 0;
         border-right: none;
     }
 
-    .about-section-wrapper .video-section .video-title {
+    /* .about-section-wrapper .video-section .video-title {
         margin: 0 20px 40px 20px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {

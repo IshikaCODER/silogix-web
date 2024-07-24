@@ -6,14 +6,14 @@ function Values() {
     <>
       {/* <!-- about-values-section-start --> */}
       <div className="about-values-area">
-        <div className="container">
+        <div className="container-md">
           <div className="values-section">
             {/* <!-- values-section-title-start --> */}
             <div className="values-section-title">
               <div className="values-title">
                 <h1>
                   Driving Innovation with Values in{" "}
-                  <span className="colored-title">Our Startup World</span>
+                  <br/><span className="colored-title">Our Startup World</span>
                 </h1>
               </div>
               <div className="values-content">

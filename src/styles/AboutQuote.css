@@ -24,6 +24,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .about-quote-area{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
     .about-quote-area .about-quote-section {
         padding: 40px 50px;
     }

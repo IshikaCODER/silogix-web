@@ -1,5 +1,6 @@
 .values-section .values-section-title .values-title {
-    margin: 0 250px 10px 250px;
+    /* margin: 0 250px 10px 250px; */
+    margin-bottom: 10px;
     color: var(--dark1);
     text-align: center;
 }
@@ -83,7 +84,7 @@
 /* Responsive Adjustments For Section Title*/
 @media (max-width: 1200px) {
     .values-section .values-section-title .values-title {
-        margin: 0 150px 10px 150px;
+        /* margin: 0 150px 10px 150px; */
         font-size: 32px;
     }
 
@@ -95,7 +96,7 @@
 
 @media (max-width: 992px) {
     .values-section .values-section-title .values-title {
-        margin: 0 100px 10px 100px;
+        /* margin: 0 100px 10px 100px; */
         font-size: 28px;
     }
 
@@ -103,11 +104,37 @@
         margin: 0 110px 48px 110px;
         font-size: 16px;
     }
+
+    .values-section-content #iconBox1,
+    .values-section-content #iconBox2,
+    .values-section-content #iconBox3,
+    .values-section-content #iconBox4{
+        border-radius: 12px;
+        border: 1px solid var(--gray);
+        margin-bottom: 20px;
+    }
+
+    .values-section-content #iconBox4{
+        margin-bottom: 0;
+    }
+    
+    .values-section-content .icon-box-wrapper{
+        align-items: center;
+    }
+
+    .icon-box-wrapper .icon-box{
+        margin-top: 0;
+        height: 80px;
+    }
 }
 
 @media (max-width: 768px) {
+    .about-values-area{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .values-section .values-section-title .values-title {
-        margin: 0 60px 10px 60px;
+        /* margin: 0 60px 10px 60px; */
         font-size: 24px;
     }
 
@@ -119,7 +146,7 @@
 
 @media (max-width: 576px) {
     .values-section .values-section-title .values-title {
-        margin: 0 30px 10px 30px;
+        /* margin: 0 30px 10px 30px; */
         font-size: 20px;
     }
 

@@ -5,7 +5,7 @@ function AboutQuote() {
   return (
     <>
       <div className="about-quote-area">
-        <div className="container">
+        <div className="container-md">
           <div className="about-quote-section">
             <h3>"I would say that hardware is the bone of the head, the skull. The semiconductor is the brain
               within the head. The software is the wisdom and data is the knowledge"

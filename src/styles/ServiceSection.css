@@ -258,3 +258,12 @@
         left: 85%;
     }
 }
+
+@media (max-width: 480px) {
+    .service-card-section .card .card-body .card-text{
+        display: none;
+    }
+    .service-card-section .card .card-body{
+        align-content: center;
+    }
+}
