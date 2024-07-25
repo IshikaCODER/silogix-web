@@ -8,7 +8,7 @@
 .home-insight-area .home-insight-section{
     display: flex;
     justify-content: space-evenly;
-    padding: 90px 0 90px 0;
+    padding: 90px 0 60px 0;
     align-items: center;
     gap: 200px;
 }
@@ -139,6 +139,17 @@
   @media (max-width: 576px){
     .insight-card-section-2 .theme-btn{
         padding: 13px 37%;
+    }
+    /* .insight-card-section-1 .insight-card-1, .insight-card-section-1 .insight-card-2,
+    .insight-card-section-2 .insight-card-3{
+        width: 92%;
+    }     */
+  }
+
+  @media (max-width:449px){
+    .home-insight-area .home-insight-section{
+        padding-left: 8px;
+        padding-right: 8px;
     }
   }
 

@@ -75,9 +75,19 @@
     .sub-section-wrap .sub-input-area .sub-input{
         width:  100%;
     }
+    .sub-section-wrap .sub-content .sub-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sub-section-wrap .sub-content p{
+        margin-top: 30px;
+        padding-left: 0;
+        text-align: center;
+        align-self: center;
+    }
 }
 
-@media (max-width: 699px){
+@media (max-width: 768px){
     .sub-section-wrap .sub-input-area .sub-input{
         flex-direction: column;
         gap: 20px;
@@ -92,10 +102,17 @@
     }
 }
 
-@media (max-width: 559px){
+@media (max-width: 576px){
     .sub-section-wrap{
         padding: 40px;
         padding-top: 90px;
+    }
+}
+
+@media (max-width: 480px){
+    .sub-section-wrap{
+        padding: 20px;
+        padding-top: 95px;
     }
 }
 

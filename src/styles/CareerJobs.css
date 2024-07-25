@@ -125,15 +125,8 @@
     border: none;
     outline: none;
     font-weight: 500;
-    /* z-index: 1;
-    background-color: var(--primary_color2);
-    border-radius: 5px;
-    position: relative;
-    transition: .3s; */
 }
-/* .default-btn:hover {
-    color: var(--white);
-} */
+
 .default-btn i {
     position: relative;
     top: 3px;
@@ -199,6 +192,12 @@
         opacity: 1;
         margin-top: 17px;
         align-self: start;
+    }
+    .find-jobs-card:hover .find-jobs-btn{
+        opacity:1;
+        top:0;
+        -webkit-transform:translateY(0%);
+        transform:translateY(0%)
     }
     .find-jobs-card.d-flex {
         flex-direction: column;
