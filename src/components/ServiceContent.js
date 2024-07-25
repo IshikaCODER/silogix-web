@@ -1,69 +1,36 @@
 import React from 'react';
 import '../styles/ServiceContent.css';
-import img1 from '../assets/img11-1.jpg';
-import img2 from '../assets/img11-2.jpeg';
-import img3 from '../assets/img11-3.jpg';
-import img4 from '../assets/img11-4.jpg';
-import img5 from '../assets/img11-5.webp';
+import img from '../assets/img11-1.jpg';
 
 function ServiceContent() {
   return (
     <>
-      <div id="components">
-            <div className="service-part up">
-                <img src={img1} alt="images" className="service-img"/>
-                <div className="service-part-content left-padding space">
-                    <h5>Memory Compiler Design Services</h5>
-                    <p>Silogix Nanosystems accelerates success with expert Foundation IP solutions and a proven first-pass 
-                        silicon track record. Our comprehensive memory design services cover SRAM, ROM, Reg. File, DPRAM, 
-                        2PRAM, Special ROM, and Customized ROM, supported by Verilog modeling, schematic design, layout 
-                        verification, extensive reliability checks, and thorough characterization. Partner with us for 
-                        tailored, reliable memory solutions.</p>
-                </div>
-            </div>
-            <div className="service-part down">
-                <div className="service-part-content right-padding space">
-                    <h5>Standard Cell Design Services</h5>
-                    <p>Silogix Nanosystems delivers complete standard cell design and characterization solutions for 
-                        various foundries. We specialize in UHD, HD, HP, Low Leakage, Voltage Scaling, and Back Gate 
-                        Biasing libraries. Our expertise includes modeling, schematic design, characterization, layout,
-                        physical verification, and quality checks, ensuring high-quality, reliable results.</p>
-                    </div> 
-                <img src={img2} alt="images" className="service-img"/>       
-            </div>
-            <div className="service-part up">
-                <img src={img3} alt="images" className="service-img"/>
-                <div className="service-part-content left-padding space">
-                    <h5>IO Lib. Design Service Capabilities</h5>
-                    <p>Silogix Nanosystems offers complete IO Library design and characterization solutions for diverse 
-                        foundries. Our expertise ensures compatibility and optimization across various manufacturing 
-                        processes. From initial design to validation, we deliver high-quality, reliable IO interfaces 
-                        tailored to your needs.</p>
-                </div>
-            </div>
-            <div className="service-part down">
-                <div className="service-part-content right-padding space">
-                    <h5>Custom Layout Design Service</h5>
-                    <p>Silogix Nanosystems provides custom layout design services tailored to optimize chip performance 
-                        and accelerate time to market. With expertise in advanced nodes including 40nm, 28nm, 22nm, 16nm, 
-                        7nm, and 5nm, we deliver compact, power-efficient designs using Cadence Virtuoso XL. Our verification 
-                        tools include Caliber, and we utilize languages such as Skill, Python, Perl, Shell, TCL, and C++. 
-                        From DRC and LVS to ESD and Antenna checks, we ensure thorough physical verification for reliable chip layouts.</p>
+      {/* <!-- services-skill-area-start --> */}
+        <div className="services-skill-area">
+            <div className="services-skill-wrapper">
+                {/* <!-- services-skill-section-start --> */}
+                <div className="services-skill-section">
+                    {/* <!-- services-skill-section-content-start --> */}
+                    <div className="services-skill-section-content">
+                        <div className="service-skill-title">
+                            <div className="skill-maintitle">
+                                <h5 className="section-subtitle">Our Skills</h5>
+                                <h2>Stay Up, Stay Running & Protected</h2>
+                            </div>
+                            <div className="skill-title-para">
+                                <p>Fortune 500 enterprises and established brands trust our services.</p>
+                            </div>
+                        </div>
                     </div>
-                <img src={img4} alt="images" className="service-img"/>
-            </div>
-            <div className="service-part up">
-                <img src={img5} alt="images" className="service-img"/>
-                <div className="service-part-content left-padding space">
-                    <h5>EDA Automation & Development</h5>
-                    <p>Silogix Nanosystems specializes in EDA automation and development, offering expertise in programming 
-                        languages such as Python, Perl, Skill, C++, and Tcl/Tk. Our team excels in algorithm development, 
-                        scripting, and debugging, providing automation support for both existing flows and new flow development. 
-                        Whether optimizing current processes or creating innovative solutions, we ensure efficient and reliable 
-                        automation tailored to your specific needs.</p>
+                    {/* <!-- services-skill-section-content-end --> */}
+                    <div className="skill-img-area">
+                        <img src={img} alt=""/>
+                    </div>
                 </div>
+                {/* <!-- services-skill-section-end --> */}
             </div>
         </div>
+        {/* <!-- services-skill-area-end --> */}
     </>
   )
 }

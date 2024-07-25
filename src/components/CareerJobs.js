@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css";
 import '../styles/CareerJobs.css';
 import '../styles/CareerForm.css';
 import { Link } from 'react-router-dom';
@@ -85,10 +87,58 @@ function CareerJobs() {
     const handleOpenForm = () => {
         setOpenForm(true);
     };
-    
-      const handleCloseForm = () => {
+
+    const handleCloseForm = () => {
         setOpenForm(false);
-      };
+    };
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+    });
+    const [errors, setErrors] = useState({});
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const validate = () => {
+        let formErrors = {};
+        if (!formData.name) formErrors.name = "Name is required";
+        if (!formData.email) {
+            formErrors.email = "Email is required";
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            formErrors.email = "Email is invalid";
+        }
+        return formErrors;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const formErrors = validate();
+        if (Object.keys(formErrors).length === 0) {
+            // No errors, submit form
+            console.log("Form submitted successfully", formData);
+            // Clear form data after successful submission
+            setFormData({
+                name: "",
+                email: "",
+            });
+            Toastify({
+                text: "Form submitted successfully",
+                backgroundColor: "green",
+                className: "toastify-success",
+            }).showToast();
+        } else {
+            setErrors(formErrors);
+            Toastify({
+                text: "Please fill in all required fields",
+                backgroundColor: "red",
+                className: "toastify-error",
+            }).showToast();
+        }
+    };
 
     return (
         <>
@@ -155,36 +205,56 @@ function CareerJobs() {
             </div>
             {/* <!-- jobs-section-start --> */}
 
+            {/* <!-- pop-up-apply-form-start --> */}
             <Dialog open={openForm} onClose={() => setOpenForm(false)} fullWidth>
-                {/* <!-- pop-up-apply-form-start --> */}
                 <div id="formPopup" className="form-popup">
-                    <form action="#" className="form-container">
+                    <form onSubmit={handleSubmit} className="form-container">
                         {/* <!-- form-upper-part-start --> */}
                         <DialogTitle>
-                            <div className="close-icon" id='closeIcon' onClick={handleCloseForm}>
-                                <i className="fa-solid fa-xmark"></i>
-                            </div>
                             <div className="form-title">
                                 <h2>Apply for this Role</h2>
+                            </div>
+                            <div className="close-icon" id='closeIcon' onClick={handleCloseForm}>
+                                <i className="fa-solid fa-xmark"></i>
                             </div>
                         </DialogTitle>
                         {/* <!-- form-upper-part-end --> */}
                         {/* <!-- form-fields-start --> */}
-                        <DialogContent sx={{ paddingLeft: '10px', paddingRight: '10px', overflow: 'hidden'  }}>
+                        <DialogContent sx={{ paddingLeft: '10px', paddingRight: '10px', overflow: 'hidden' }}>
                             <div className="row">
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <input type="text" id="fullName" placeholder="Full Name *" required />
+                                        <input
+                                            type="text"
+                                            id="fullName"
+                                            name="name"
+                                            placeholder="Full Name *"
+                                            value={formData.name}
+                                            onChange={handleInputChange}
+                                        />
+                                        {errors.name && (
+                                            <span className="error">{errors.name}</span>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <input type="email" id="email" placeholder="Email *" required />
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Email *"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
+                                        />
+                                        {errors.email && (
+                                            <span className="error">{errors.email}</span>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <select id="country" name="country" required>
+                                        <select id="country" name="country">
                                             <option value="" disabled selected>Please Select your country</option>
                                             <option value="India">India</option>
                                             <option value="USA">USA</option>
@@ -196,18 +266,24 @@ function CareerJobs() {
                                 <div className="col-sm-12">
                                     <div className="single-form">
                                         <label for="cv">Upload CV*</label>
-                                        <input type="file" id="cv" name="cv" required />
+                                        <input
+                                            type="file"
+                                            id="cv"
+                                            name="cv"
+                                        />
                                     </div>
                                 </div>
                             </div>
-                            </DialogContent>
-                            <DialogActions sx={{ justifyContent: 'center' }}>
+                        </DialogContent>
+                        <DialogActions sx={{ justifyContent: 'center' }}>
                             <div className="col-sm-12">
                                 <div className="form-btn">
-                                    <button type="submit" class="btn theme-btn">Submit</button>
+                                    <button type="submit" class="btn theme-btn">
+                                        Submit
+                                    </button>
                                 </div>
                             </div>
-                            </DialogActions>
+                        </DialogActions>
                         {/* <!-- form-fields-start --> */}
                     </form>
                 </div>

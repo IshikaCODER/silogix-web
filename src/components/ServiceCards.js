@@ -1,50 +1,164 @@
 import React from 'react'
 import '../styles/ServiceCards.css'
+import img1 from '../assets/img11-1.jpg';
+import img2 from '../assets/img11-2.jpeg';
+import img3 from '../assets/img11-3.jpg';
+import img4 from '../assets/img11-4.jpg';
+import img5 from '../assets/img11-5.webp';
+
+// const cardData = [
+//     {
+//         id = "";
+//         imgSrc = "";
+//         iconClass = "";
+//         cardTitle = "";
+//         cardText = ""
+//     }
+// ]
 
 function ServiceCards() {
   return (
     <>
-      <div className="center">
-            <h1>We Provide Awesome Services</h1>
-            <p>At Silogix Nanosystems, we are dedicated to delivering exceptional services that drive innovation 
-                and excellence in the semiconductor industry. Our commitment to innovation, excellence, and 
-                collaboration ensures that you receive top-notch services that propel your business forward and 
-                help you achieve your technological goals.</p>
+      {/* <!-- services-area-start --> */}
+        <div className="services-area">
+            <div className="container">
+                {/* <!-- services-section-wrapper-start --> */}
+                <div className="services-section-wrapper">
+                    {/* <!-- services-section-title-start --> */}
+                    <div className="services-section-title">
+                        <div className="services-maintitle col-sm-4">
+                            <h5 className="section-subtitle">Our Services</h5>
+                            <h2>What We Offer</h2>
+                        </div>
+                        <div className="services-title-para col-sm-8">
+                            <p>We are dedicated to delivering exceptional services that drive innovation
+                                & excellence in the semiconductor industry.</p>
+                        </div>
+                    </div>
+                    {/* <!-- services-section-title-end --> */}
+                    {/* <!-- services-card-section-start --> */}
+                    <div className="service-cards-section">
+                        {/* <!-- row-start --> */}
+                        <div className="row">
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard1">
+                                <div className="slider-items">
+                                    <img src={img1} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">Memory Compiler Design</h5>
+                                    <p className="card-text">Our comprehensive memory design services cover SRAM, ROM, Reg.
+                                        File, DPRAM, 2PRAM & Special ROM etc.</p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard2">
+                                <div className="slider-items">
+                                    <img src={img2} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">Standard Cell Design</h5>
+                                    <p className="card-text">We specialize in UHD, HD, HP, Low Leakage, Voltage Scaling, and
+                                        Back Gate Biasing libraries.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard3">
+                                <div className="slider-items">
+                                    <img src={img3} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">IO Lib. Design </h5>
+                                    <p className="card-text">Our expertise ensures compatibility and optimization across various
+                                        manufacturing processes. </p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                        </div>
+                        {/* <!-- row-end --> */}
+                        {/* <!-- row-start --> */}
+                        <div className="row">
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard4">
+                                <div className="slider-items">
+                                    <img src={img4} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">Custom Layout Design</h5>
+                                    <p className="card-text">With expertise in advanced nodes including 40nm, 28nm, 22nm, 16nm,
+                                        7nm, and 5nm.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard5">
+                                <div className="slider-items">
+                                    <img src={img5} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">EDA Automation & Development</h5>
+                                    <p className="card-text">We expertise in programming languages such as Python, Perl, Skill,
+                                        C++, and Tcl/Tk.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                            {/* <!-- service-card-start --> */}
+                            <div className="card" id="serviceCard6">
+                                <div className="slider-items">
+                                    <img src={img5} className="silder-img" alt/>
+                                    <button className="btn theme-btn">
+                                        Learn More
+                                        <i className="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <i className="fa-solid fa-gear card-icon-top"></i>
+                                <div className="card-body">
+                                    <h5 className="card-title">EDA Automation & Development</h5>
+                                    <p className="card-text">We expertise in programming languages such as Python, Perl, Skill,
+                                        C++, and Tcl/Tk.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <!-- service-card-end --> */}
+                        </div>
+                        {/* <!-- row-end --> */}
+                    </div>
+                    {/* <!-- services-card-section-end --> */}
+                </div>
+                {/* <!-- services-section-wrapper-end --> */}
+            </div>
         </div>
-
-        <div id="service-section">
-            <div className="service-cards">
-                <div className="icon-circle">
-                    <i className="fa-solid fa-memory"></i>
-                </div>
-                <h6>Memory Compiler Design</h6>
-            </div>
-            <div className="service-cards">
-                <div className="icon-circle">
-                    <i className="fa-solid fa-table-cells"></i>
-                </div>
-                <h6>Standard Cell Design</h6>
-            </div>
-            <div className="service-cards">
-                <div className="icon-circle">
-                    <i className="fa-solid fa-bookmark"></i>
-                </div>
-                <h6>IO Lib. Design </h6>
-            </div>
-            <div className="service-cards">
-                <div className="icon-circle">
-                    <i className="fa-solid fa-layer-group"></i>
-                </div>
-                <h6>Custom Layout Design</h6>
-            </div>
-            <div className="service-cards">
-                <div className="icon-circle c5">
-                    <i className="fa-brands fa-connectdevelop"></i>
-                </div>
-                <h6>EDA Automation & Development</h6>
-            </div>
-        </div>
-
+        {/* <!-- service-card-area-end --> */}
     </>
   )
 }
