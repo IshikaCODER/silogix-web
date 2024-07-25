@@ -202,11 +202,21 @@
   .contact-section .contact-wrap .contact-form {
     margin-left: 0;
   }
-}
 
-@media (max-width: 991px) {
   .contact-section{
     padding-left: 8px;
     padding-right: 8px;
+  }
+}
+
+@media (max-width: 485px) {
+  .contact-section .contact-wrap .contact-form .contact-form-wrap .form-btn .btn {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 399px) {
+  .contact-section .contact-wrap .contact-form .contact-form-wrap .form-btn .btn {
+    padding: 0 15px;
   }
 }

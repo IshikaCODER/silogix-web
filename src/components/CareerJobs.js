@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
 import '../styles/CareerJobs.css';
+import '../styles/CareerForm.css';
 import { Link } from 'react-router-dom';
 import logo1 from '../assets/images/logo.png';
 import logo2 from '../assets/images/logo192.png';
 import logo3 from '../assets/images/node.png';
+
+import {
+    Dialog,
+    DialogTitle,
+    DialogContent,
+    DialogActions,
+} from "@mui/material";
 
 const logos = [
     { id: 1, src: logo1, title: 'Silogix' },
@@ -68,10 +76,20 @@ const jobData = [
 
 jobData.forEach((job, index) => {
     job.imgSrc.src = logos[index].src;
-    job.imgSrc.alt = logos[index].title; 
+    job.imgSrc.alt = logos[index].title;
 });
 
 function CareerJobs() {
+    const [openForm, setOpenForm] = useState(false);
+
+    const handleOpenForm = () => {
+        setOpenForm(true);
+    };
+    
+      const handleCloseForm = () => {
+        setOpenForm(false);
+      };
+
     return (
         <>
             {/* <!-- jobs-section-start --> */}
@@ -115,7 +133,7 @@ function CareerJobs() {
                                     </div>
 
                                     <div className="find-jobs-btn">
-                                        <Link to={job.link} className="default-btn theme-btn" id='applyBtn'>
+                                        <Link to={job.link} className="default-btn theme-btn" id='applyBtn' onClick={handleOpenForm}>
                                             Apply Now<i class="fa-regular fa-paper-plane"></i>
                                         </Link>
                                     </div>
@@ -136,6 +154,65 @@ function CareerJobs() {
                 </div>
             </div>
             {/* <!-- jobs-section-start --> */}
+
+            <Dialog open={openForm} onClose={() => setOpenForm(false)} fullWidth>
+                {/* <!-- pop-up-apply-form-start --> */}
+                <div id="formPopup" className="form-popup">
+                    <form action="#" className="form-container">
+                        {/* <!-- form-upper-part-start --> */}
+                        <DialogTitle>
+                            <div className="close-icon" id='closeIcon' onClick={handleCloseForm}>
+                                <i className="fa-solid fa-xmark"></i>
+                            </div>
+                            <div className="form-title">
+                                <h2>Apply for this Role</h2>
+                            </div>
+                        </DialogTitle>
+                        {/* <!-- form-upper-part-end --> */}
+                        {/* <!-- form-fields-start --> */}
+                        <DialogContent sx={{ paddingLeft: '10px', paddingRight: '10px', overflow: 'hidden'  }}>
+                            <div className="row">
+                                <div className="col-sm-12">
+                                    <div className="single-form">
+                                        <input type="text" id="fullName" placeholder="Full Name *" required />
+                                    </div>
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="single-form">
+                                        <input type="email" id="email" placeholder="Email *" required />
+                                    </div>
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="single-form">
+                                        <select id="country" name="country" required>
+                                            <option value="" disabled selected>Please Select your country</option>
+                                            <option value="India">India</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="UK">UK</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="single-form">
+                                        <label for="cv">Upload CV*</label>
+                                        <input type="file" id="cv" name="cv" required />
+                                    </div>
+                                </div>
+                            </div>
+                            </DialogContent>
+                            <DialogActions sx={{ justifyContent: 'center' }}>
+                            <div className="col-sm-12">
+                                <div className="form-btn">
+                                    <button type="submit" class="btn theme-btn">Submit</button>
+                                </div>
+                            </div>
+                            </DialogActions>
+                        {/* <!-- form-fields-start --> */}
+                    </form>
+                </div>
+                {/* <!-- pop-up-apply-form-end --> */}
+            </Dialog >
         </>
     )
 }
