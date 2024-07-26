@@ -35,3 +35,17 @@ function App() {
 }
 
 export default App;
+
+
+
+// // project import
+// import Routes from './routes';
+
+// const App = () => (
+//   <>
+//   console.log('App component rendered');
+//   <Routes />
+//   </>
+// );
+
+// export default App;

@@ -1,38 +1,38 @@
 import { lazy } from "react";
-import Loadable from "components/Loadable";
-import MainLayout from "layout/MainLayout";
+import Loadable from "../components/third-party/Loadable";
+import MainLayout from "../layout/MainLayout";
 
 
 // Pages
 const HomePage = Loadable(
-    lazy(() => import("pages/Home"))
+    lazy(() => import("../pages/Home"))
 );
 const CompanyPage = Loadable(
-    lazy(() => import("pages/Company"))
+    lazy(() => import("../pages/Company"))
 );
 const ServicePage = Loadable(
-    lazy(() => import("pages/Service"))
+    lazy(() => import("../pages/Service"))
 );
 const CareerPage = Loadable(
-    lazy(() => import("pages/Career"))
+    lazy(() => import("../pages/Career"))
 );
 const BlogPage = Loadable(
-    lazy(() => import("pages/Blog"))
+    lazy(() => import("../pages/Blog"))
 );
 const BlogDescription = Loadable(
-    lazy(() => import("pages/BlogDescription"))
+    lazy(() => import("../pages/BlogDescription"))
 );
 const ContactPage = Loadable(
-    lazy(() => import("pages/Contact"))
+    lazy(() => import("../pages/Contact"))
 );
 const PrivacyPolicy = Loadable(
-    lazy(() => import("pages/Privacy"))
+    lazy(() => import("../pages/Privacy"))
 );
 const TermsConditions = Loadable(
-    lazy(() => import("pages/Terms"))
+    lazy(() => import("../pages/Terms"))
 );
 const FAQs = Loadable(
-    lazy(() => import("pages/FAQs"))
+    lazy(() => import("../pages/FAQs"))
 );
 
 

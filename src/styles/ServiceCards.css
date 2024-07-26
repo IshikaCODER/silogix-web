@@ -1,28 +1,31 @@
 .services-area{
-    padding-top: 90px;
+    padding: 90px 0 70px 0;
 }
 
 .services-section-title .services-maintitle h5.section-subtitle{
     text-transform: uppercase;
     color: var(--primary_color);
+    font-size: 16px;
 }
 
 .services-section-wrapper .services-section-title{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .services-section-title .services-maintitle h2{
     font-weight: 700;
     font-size: 50px;
+    color: var(--dark1);
 }
 
 .services-section-title .services-title-para p{
     margin-top: 10px;
     font-size: 25px;
     padding-left: 90px;
+    color: var(--dark2);
 }
 .services-section-wrapper .service-cards-section{
     display: flex;
@@ -38,9 +41,23 @@
 
 .services-section-wrapper .service-cards-section .card{
     width: 22.5rem;
-    height: 18.5rem;
-    padding: 50px 40px 40px;
+    /* height: 18.5rem; */
+    padding: 50px 40px 30px 40px;
     overflow: hidden;
+}
+
+.service-cards-section .card .card-body{
+    padding: 0;
+}
+
+.service-cards-section .card .card-body .card-title{
+    font-size: 25px;
+    color: var(--dark1);
+}
+
+.service-cards-section .card .card-body .card-text{
+    font-size: 20px;
+    color: var(--dark2);
 }
 
 .service-cards-section .card .card-icon-top{
@@ -50,6 +67,7 @@
 
 .service-cards-section .card i{
     font-size: 50px;
+    color: var(--primary_color);
 }
 
 .service-cards-section .card .slider-items{
@@ -108,10 +126,6 @@
     left: 100%;   
 }
 
-.service-cards-section .card .card-body{
-    padding: 0;
-}
-
 .service-cards-section .slider-items .theme-btn{
     position: absolute;
     top: 50%;
@@ -119,6 +133,8 @@
     transform: translateY(-50%);
     transition: all 0.5s ease 0.5s;
     z-index: 2;
+    color: var(--white);
+    border: none;
 }
 
 .service-cards-section #serviceCard1 .slider-items .theme-btn,
@@ -160,8 +176,10 @@
 
 .service-cards-section .card .slider-items .theme-btn i{
     font-size: 20px;
+    color: var(--white);
 }
 
 .service-cards-section .card .slider-items .theme-btn:hover i{
-    transition: none;
+    transform: none;
+    color: var(--white);
 }

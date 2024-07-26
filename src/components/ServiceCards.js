@@ -52,8 +52,8 @@ function ServiceCards() {
                                 <i className="fa-solid fa-gear card-icon-top"></i>
                                 <div className="card-body">
                                     <h5 className="card-title">Memory Compiler Design</h5>
-                                    <p className="card-text">Our comprehensive memory design services cover SRAM, ROM, Reg.
-                                        File, DPRAM, 2PRAM & Special ROM etc.</p>
+                                    <p className="card-text">Our memory design services cover SRAM, ROM, Reg.
+                                        File, DPRAM, 2PRAM & Special ROM.</p>
                                 </div>
                             </div>
                             {/* <!-- service-card-end --> */}
@@ -87,7 +87,7 @@ function ServiceCards() {
                                 <i className="fa-solid fa-gear card-icon-top"></i>
                                 <div className="card-body">
                                     <h5 className="card-title">IO Lib. Design </h5>
-                                    <p className="card-text">Our expertise ensures compatibility and optimization across various
+                                    <p className="card-text">We ensures compatibility & optimization across various
                                         manufacturing processes. </p>
                                 </div>
                             </div>

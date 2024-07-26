@@ -95,6 +95,7 @@ function CareerJobs() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        skill: ""
     });
     const [errors, setErrors] = useState({});
 
@@ -112,6 +113,7 @@ function CareerJobs() {
             formErrors.email = "Email is invalid";
         }
         return formErrors;
+        if (!formData.skill) formErrors.skill = "Skills are required";
     };
 
     const handleSubmit = (e) => {
@@ -124,6 +126,7 @@ function CareerJobs() {
             setFormData({
                 name: "",
                 email: "",
+                skill: ""
             });
             Toastify({
                 text: "Form submitted successfully",
@@ -249,6 +252,21 @@ function CareerJobs() {
                                         />
                                         {errors.email && (
                                             <span className="error">{errors.email}</span>
+                                        )}
+                                    </div>
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="single-form">
+                                        <input
+                                            type="text"
+                                            id="skill"
+                                            name="skill"
+                                            placeholder="Skills *"
+                                            value={formData.skill}
+                                            onChange={handleInputChange}
+                                        />
+                                        {errors.skill && (
+                                            <span className="error">{errors.skill}</span>
                                         )}
                                     </div>
                                 </div>
