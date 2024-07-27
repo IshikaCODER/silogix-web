@@ -194,12 +194,6 @@
 /* responsive style */
 
 @media (max-width: 1200px) {
-    .services-section-wrapper .services-section-title{
-        /* flex-direction: column; */
-        /* margin-left: 90px; */
-        /* gap: 0; */
-
-    }
     .services-section-title .services-title-para p{
         padding-left: 10;
     }
