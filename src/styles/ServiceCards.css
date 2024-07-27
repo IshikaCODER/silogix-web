@@ -11,37 +11,41 @@
 .services-section-wrapper .services-section-title{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
     padding-bottom: 50px;
 }
 
+.services-section-title .services-maintitle{
+    width: 50%;
+}
 .services-section-title .services-maintitle h2{
     font-weight: 700;
     font-size: 50px;
     color: var(--dark1);
 }
 
+.services-section-title .services-title-para{
+    width: 50%;
+}
+
 .services-section-title .services-title-para p{
     margin-top: 10px;
     font-size: 25px;
-    padding-left: 90px;
+    /* padding-left: 90px; */
     color: var(--dark2);
 }
 .services-section-wrapper .service-cards-section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    gap: 30px;
-}
-
-.services-section-wrapper .service-cards-section .row{
-    justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .services-section-wrapper .service-cards-section .card{
-    width: 22.5rem;
+    /* width: 22.5rem; */
     /* height: 18.5rem; */
+    width: 30%;
     padding: 50px 40px 30px 40px;
     overflow: hidden;
 }
@@ -131,7 +135,7 @@
     top: 50%;
     left: -100%;
     transform: translateY(-50%);
-    transition: all 0.5s ease 0.5s;
+    transition: all 0.9s ease;
     z-index: 2;
     color: var(--white);
     border: none;
@@ -148,12 +152,12 @@
 }
 
 .service-cards-section #serviceCard2 .slider-items .theme-btn {
-    left: 0;
+    left: 25%;
     top: -100%;
 }
 
 .service-cards-section #serviceCard5 .slider-items .theme-btn {
-    left: 0;
+    left: 25%;
     top: 100%;
 }
 
@@ -182,4 +186,49 @@
 .service-cards-section .card .slider-items .theme-btn:hover i{
     transform: none;
     color: var(--white);
+}
+
+
+
+
+/* responsive style */
+
+@media (max-width: 1200px) {
+    .services-section-wrapper .services-section-title{
+        /* flex-direction: column; */
+        /* margin-left: 90px; */
+        /* gap: 0; */
+
+    }
+    .services-section-title .services-title-para p{
+        padding-left: 10;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-section-wrapper .service-cards-section .card{
+        width: 47%;
+    }
+    .services-section-wrapper .services-section-title{
+        flex-direction: column;
+    }
+    .services-section-title .services-maintitle{
+        width: 100%;
+    }
+    .services-section-title .services-title-para{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section-wrapper .service-cards-section .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-area{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }

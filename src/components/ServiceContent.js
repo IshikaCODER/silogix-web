@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/ServiceContent.css';
 import { Link } from 'react-router-dom';
-import img from '../assets/img11-1.jpg';
+import img from '../assets/images/img123.jpg';
 import ProgressBar from '../components/third-party/ProgressBar';
 
 function ServiceContent() {

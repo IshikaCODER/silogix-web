@@ -54,7 +54,8 @@
 .service-contact-area .service-contact-section {
     padding: 90px 150px;
     text-align: center;
-    background-image: url(../assets/img11-1.jpg);
+    background-image: url(../assets/images/img1221.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     gap: 40px;
