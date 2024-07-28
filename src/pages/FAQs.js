@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Faqs.css';
 import Banner from '../components/Banner';
-import banner from "../assets/banners/privacy-banner.png";
+import banner from "../assets/banners/faq-banner.png";
 import SubSection from '../components/SubSection';
 
 const FAQItem = ({ question, answer, isCollapsible, isOpen, onToggle }) => {

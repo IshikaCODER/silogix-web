@@ -95,7 +95,9 @@ function CareerJobs() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        skill: ""
+        skill: "",
+        country: "",
+        upload: ""
     });
     const [errors, setErrors] = useState({});
 
@@ -112,8 +114,10 @@ function CareerJobs() {
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             formErrors.email = "Email is invalid";
         }
-        return formErrors;
         if (!formData.skill) formErrors.skill = "Skills are required";
+        if (!formData.country) formErrors.country = "Please select an option!";
+        if (!formData.upload) formErrors.upload = "CV is required ";
+        return formErrors;
     };
 
     const handleSubmit = (e) => {
@@ -126,7 +130,9 @@ function CareerJobs() {
             setFormData({
                 name: "",
                 email: "",
-                skill: ""
+                skill: "",
+                country: "",
+                upload: ""
             });
             Toastify({
                 text: "Form submitted successfully",
@@ -272,7 +278,12 @@ function CareerJobs() {
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <select id="country" name="country">
+                                        <select 
+                                            id="country" 
+                                            name="country" 
+                                            value={formData.country}
+                                            onChange={handleInputChange}
+                                        >
                                             <option value="" disabled selected>Please Select your country</option>
                                             <option value="India">India</option>
                                             <option value="USA">USA</option>
@@ -286,8 +297,10 @@ function CareerJobs() {
                                         <label for="cv">Upload CV*</label>
                                         <input
                                             type="file"
-                                            id="cv"
-                                            name="cv"
+                                            id="upload"
+                                            name="upload"
+                                            value={formData.upload}
+                                            onChange={handleInputChange}
                                         />
                                     </div>
                                 </div>

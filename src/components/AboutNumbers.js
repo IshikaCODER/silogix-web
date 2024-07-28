@@ -51,7 +51,7 @@ function AboutNumbers() {
                     </div>
                 </div>
                 <div className="video-section">
-                    <h1 className="video-title">Take A Vital Look At <br/><span className="colored-title">Our Working</span></h1>
+                    <h1 className="video-title">Take A Vital Look At <br /><span className="colored-title">Our Working</span></h1>
                     <video src={videoUrl} controls loop muted className="about-video"></video>
                 </div>
             </div>

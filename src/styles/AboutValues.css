@@ -164,5 +164,7 @@
     .values-section-content .icon-box-wrapper{
         padding: 22px;
     }
-
+    .values-section .values-section-title .values-content {
+        margin: 0 0 48px 0;
+    }
 }

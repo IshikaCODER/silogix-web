@@ -23,7 +23,7 @@ function Footer() {
                       className="footer-logo"
                       onClick={handleScrollToTop}
                     >
-                      <img src={logo} alt="Logo" id="logo" />
+                      <img src={logo} alt="" id="logo" />
                       SiLogix
                     </Link>
                     <p>

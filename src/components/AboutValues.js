@@ -13,7 +13,7 @@ function Values() {
               <div className="values-title">
                 <h1>
                   Driving Innovation with Values in{" "}
-                  <br/><span className="colored-title">Our Startup World</span>
+                  <br /><span className="colored-title">Our Startup World</span>
                 </h1>
               </div>
               <div className="values-content">

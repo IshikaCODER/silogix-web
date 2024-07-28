@@ -54,7 +54,7 @@
 .service-contact-area .service-contact-section {
     padding: 90px 150px;
     text-align: center;
-    background-image: url(../assets/images/img1221.jpg);
+    background-image: url(../assets/images/service-cta.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -113,11 +113,17 @@
         margin-left: 0;
         padding-left: 65px;
     }
+    .services-skill-section-content .service-skill-title .skill-maintitle h2 {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 992px) {
     .services-skill-area .services-skill-wrapper {
         padding-left: 20px;
+    }
+    .services-skill-section-content .service-skill-title .skill-maintitle h2 {
+        font-size: 38px;
     }
 }
 
@@ -134,6 +140,10 @@
 
     .services-skill-section .services-skill-section-content {
         padding: 0 20px;
+    }
+
+    .services-skill-section-content .service-skill-title .skill-maintitle h2 {
+        font-size: 34px;
     }
 
     .services-skill-section .skill-img-area {

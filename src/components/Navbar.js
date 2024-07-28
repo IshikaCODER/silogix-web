@@ -25,7 +25,7 @@ const Navbar = () => {
                         <div className="header-left d-flex align-items-center">
                             {/* <!-- header-logo-start --> */}
                             <Link to="/" className="logo">
-                                <img src={logo} id="logo" alt="Logo" />Silogix
+                                <img src={logo} id="logo" alt="" />Silogix
                             </Link>
                             <div className="header-left-right">
                                 {/* <Link to="/contact" className="theme-btn">Contact Us</Link> */}

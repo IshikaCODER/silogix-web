@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/ServiceContent.css';
 import { Link } from 'react-router-dom';
-import img from '../assets/images/img123.jpg';
+import img from '../assets/images/skill.jpg';
 import ProgressBar from '../components/third-party/ProgressBar';
 
 function ServiceContent() {
@@ -17,8 +17,8 @@ function ServiceContent() {
                             <div className="service-skill-title">
                                 <div className="skill-maintitle">
                                     <h5 className="section-subtitle">Our Skills</h5>
-                                    <h2>Stay Up, Stay 
-                                        <br/>Running & Protected</h2>
+                                    <h2>Stay Up, Stay
+                                        <br />Running & Protected</h2>
                                 </div>
                                 <div className="skill-title-para">
                                     <p>Fortune 500 enterprises and established brands trust our services.</p>
@@ -33,7 +33,7 @@ function ServiceContent() {
                         </div>
                         {/* <!-- services-skill-section-content-end --> */}
                         <div className="skill-img-area">
-                            <img src={img} alt="" />
+                            <img src={img} alt="img" />
                         </div>
                     </div>
                     {/* <!-- services-skill-section-end --> */}

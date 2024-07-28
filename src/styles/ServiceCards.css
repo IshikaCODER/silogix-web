@@ -139,6 +139,7 @@
     z-index: 2;
     color: var(--white);
     border: none;
+    padding: 13px 20px;
 }
 
 .service-cards-section #serviceCard1 .slider-items .theme-btn,
@@ -226,3 +227,7 @@
         padding-right: 8px;
     }
 }
+
+
+
+

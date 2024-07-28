@@ -40,47 +40,44 @@
     transition: all 0.3s linear;
 }
 
-.service-section .service-card-section .service-card-1 {
+.service-section .service-card-section #serviceCard1 {
     height: 340px;
     width: 232px;
     margin-top: 30px;
 }
 
-.service-section .service-card-section .service-card-1 #serviceImg1,
-.service-section .service-card-section .service-card-5 #serviceImg5 {
+.service-section .service-card-section #serviceCard1 #serviceImg1,
+.service-section .service-card-section #serviceCard5 #serviceImg5 {
     height: 170px;
 }
 
-.service-section .service-card-section .service-card-2 {
+.service-section .service-card-section #serviceCard2 {
     height: 370px;
     width: 252px;
     margin-top: 15px;
 }
 
-.service-section .service-card-section .service-card-2 #serviceImg2 {
-    height: 160px;
-}
-
-.service-section .service-card-section .service-card-3 {
+.service-section .service-card-section #serviceCard3 {
     height: 400px;
     width: 292px;
 }
 
-.service-section .service-card-section .service-card-3 #serviceImg3 {
+.service-section .service-card-section #serviceCard3 #serviceImg3 {
     height: 210px;
 }
 
-.service-section .service-card-section .service-card-4 {
+.service-section .service-card-section #serviceCard4 {
     height: 370px;
     width: 252px;
     margin-top: 15px;
 }
 
-.service-section .service-card-section .service-card-4 #serviceImg4 {
+.service-section .service-card-section #serviceCard4 #serviceImg4,
+.service-section .service-card-section #serviceCard2 #serviceImg2  {
     height: 195px;
 }
 
-.service-section .service-card-section .service-card-5 {
+.service-section .service-card-section #serviceCard5 {
     height: 340px;
     width: 232px;
     margin-top: 30px;
@@ -143,45 +140,36 @@
 
 /* Responsive style */
 @media (max-width: 1200px) {
-    /* .service-section .service-card-section .service-card-1, 
-    .service-section .service-card-section .service-card-2,
-    .service-section .service-card-section .service-card-3,
-    .service-section .service-card-section .service-card-4, 
-    .service-section .service-card-section .service-card-5{
-        height: 320px;
-        width: 250px;
-        margin-top: 0;
-    } */
     .service-section .service-card-section {
         flex-wrap: wrap;
     }
 
-    .service-section .service-card-section .service-card-1,
-    .service-section .service-card-section .service-card-2,
-    .service-section .service-card-section .service-card-3,
-    .service-section .service-card-section .service-card-4,
-    .service-section .service-card-section .service-card-5 {
+    .service-section .service-card-section #serviceCard1,
+    .service-section .service-card-section #serviceCard2,
+    .service-section .service-card-section #serviceCard3,
+    .service-section .service-card-section #serviceCard4,
+    .service-section .service-card-section #serviceCard5 {
         height: 450px;
         margin: 0 10px;
     }
 
-    .service-section .service-card-section .service-card-1,
-    .service-section .service-card-section .service-card-2 {
+    .service-section .service-card-section #serviceCard1,
+    .service-section .service-card-section #serviceCard2 {
         width: 44%;
         margin: 0 25px 20px 25px;
     }
 
-    .service-section .service-card-section .service-card-3,
-    .service-section .service-card-section .service-card-4,
-    .service-section .service-card-section .service-card-5 {
+    .service-section .service-card-section #serviceCard3,
+    .service-section .service-card-section #serviceCard4,
+    .service-section .service-card-section #serviceCard5 {
         width: 30%;
     }
 
-    .service-section .service-card-section .service-card-1 #serviceImg1,
-    .service-section .service-card-section .service-card-2 #serviceImg2,
-    .service-section .service-card-section .service-card-3 #serviceImg3,
-    .service-section .service-card-section .service-card-4 #serviceImg4,
-    .service-section .service-card-section .service-card-5 #serviceImg5 {
+    .service-section .service-card-section #serviceCard1 #serviceImg1,
+    .service-section .service-card-section #serviceCard2 #serviceImg2,
+    .service-section .service-card-section #serviceCard3 #serviceImg3,
+    .service-section .service-card-section #serviceCard4 #serviceImg4,
+    .service-section .service-card-section #serviceCard5 #serviceImg5 {
         height: 60%;
     }
 
@@ -200,26 +188,26 @@
         align-items: center;
     }
 
-    .service-section .service-card-section .service-card-1,
-    .service-section .service-card-section .service-card-2,
-    .service-section .service-card-section .service-card-3,
-    .service-section .service-card-section .service-card-4,
-    .service-section .service-card-section .service-card-5 {
+    .service-section .service-card-section #serviceCard1,
+    .service-section .service-card-section #serviceCard2,
+    .service-section .service-card-section #serviceCard3,
+    .service-section .service-card-section #serviceCard4,
+    .service-section .service-card-section #serviceCard5 {
         height: 200px;
         width: 80%;
         margin: 10px 0;
     }
 
-    .service-section .service-card-section .service-card-1 #serviceImg1,
-    .service-section .service-card-section .service-card-2 #serviceImg2,
-    .service-section .service-card-section .service-card-3 #serviceImg3,
-    .service-section .service-card-section .service-card-4 #serviceImg4,
-    .service-section .service-card-section .service-card-5 #serviceImg5{
+    .service-section .service-card-section #serviceCard1 #serviceImg1,
+    .service-section .service-card-section #serviceCard2 #serviceImg2,
+    .service-section .service-card-section #serviceCard3 #serviceImg3,
+    .service-section .service-card-section #serviceCard4 #serviceImg4,
+    .service-section .service-card-section #serviceCard5 #serviceImg5{
         height: 100%;
         width: 40%;
     }
 
-    .service-section .service-card-section .service-card-2 #serviceImg2{
+    .service-section .service-card-section #serviceCard2 #serviceImg2{
         width: 58%;
     }
 
@@ -230,6 +218,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .service-section .service-card-section #serviceCard2 #serviceImg2{
+        width: 40%;
+    }
+}
+
 @media (max-width: 585px) {
     /* .service-card-section .card .card-body .card-text{
         display: none;
@@ -237,19 +231,19 @@
     .service-section .service-card-section .card{
         flex-direction: column;
     }
-    .service-section .service-card-section .service-card-1 #serviceImg1,
-    .service-section .service-card-section .service-card-2 #serviceImg2,
-    .service-section .service-card-section .service-card-3 #serviceImg3,
-    .service-section .service-card-section .service-card-4 #serviceImg4,
-    .service-section .service-card-section .service-card-5 #serviceImg5{
+    .service-section .service-card-section #serviceCard1 #serviceImg1,
+    .service-section .service-card-section #serviceCard2 #serviceImg2,
+    .service-section .service-card-section #serviceCard3 #serviceImg3,
+    .service-section .service-card-section #serviceCard4 #serviceImg4,
+    .service-section .service-card-section #serviceCard5 #serviceImg5{
         height: 50%;
         width: 100%;
     }
-    .service-section .service-card-section .service-card-1,
-    .service-section .service-card-section .service-card-2,
-    .service-section .service-card-section .service-card-3,
-    .service-section .service-card-section .service-card-4,
-    .service-section .service-card-section .service-card-5 {
+    .service-section .service-card-section #serviceCard1,
+    .service-section .service-card-section #serviceCard2,
+    .service-section .service-card-section #serviceCard3,
+    .service-section .service-card-section #serviceCard4,
+    .service-section .service-card-section #serviceCard5 {
         height: 300px;
     }
     .service-card-section .card .service-icon {

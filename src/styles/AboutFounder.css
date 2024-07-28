@@ -216,3 +216,9 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 480px) {
+    .founder-section .founder-section-title .founder-content {
+        margin: 0 10px 48px 10px;
+    }
+}

@@ -1,18 +1,18 @@
 import React from 'react'
 import '../styles/ServiceCards.css'
-import img1 from '../assets/img11-1.jpg';
-import img2 from '../assets/img11-2.jpeg';
-import img3 from '../assets/img11-3.jpg';
-import img4 from '../assets/img11-4.jpg';
-import img5 from '../assets/img11-5.webp';
+import service1 from '../assets/images/s1.jpeg';
+import service2 from '../assets/images/s2.jpeg';
+import service3 from '../assets/images/s3.jpg';
+import service4 from '../assets/images/s4.jpeg';
+import service5 from '../assets/images/s5.jpeg';
 
 const images = [
-    { id: 1, src: img1, alt_title: "img1" },
-    { id: 2, src: img2, alt_title: "img2" },
-    { id: 3, src: img3, alt_title: "img3" },
-    { id: 4, src: img4, alt_title: "img4" },
-    { id: 5, src: img5, alt_title: "img5" },
-    { id: 6, src: img5, alt_title: "img5" }
+    { id: 1, src: service1, alt_title: "img1" },
+    { id: 2, src: service2, alt_title: "img2" },
+    { id: 3, src: service3, alt_title: "img3" },
+    { id: 4, src: service4, alt_title: "img4" },
+    { id: 5, src: service5, alt_title: "img5" },
+    { id: 6, src: service5, alt_title: "img5" }
 ];
 
 const cardData = [
