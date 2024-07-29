@@ -3,9 +3,9 @@ import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import banner from "../assets/banners/cta-banner.png";
 import "../styles/ContactForm.css";
-import ContactInfo from "../components/ContactInfo";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import ContactInfo from "../components/contactpage/ContactInfo";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function Contact() {
   document.title = "Contact Us";

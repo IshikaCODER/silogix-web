@@ -1,8 +1,8 @@
 import React from "react";
 import banner from "../assets/banners/privacy-banner.png";
-import PrivacyContent from "../components/PrivacyContent";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import PrivacyContent from "../components/privacypolicy/PrivacyContent";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function Privacy() {
   document.title = "Privacy Policy";

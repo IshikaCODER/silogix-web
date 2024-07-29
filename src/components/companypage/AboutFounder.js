@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/AboutFounder.css';
+import '../../styles/AboutFounder.css';
 import { Link } from 'react-router-dom';
-import ceo from '../assets/images/ceo.png';
-import vp from '../assets/images/vp.png';
+import ceo from '../../assets/images/ceo.png';
+import vp from '../../assets/images/vp.png';
 
 const images = [
     { id: 1, src: ceo, alt_title: "ceo" },

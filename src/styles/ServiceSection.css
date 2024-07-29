@@ -247,6 +247,7 @@
         height: 300px;
     }
     .service-card-section .card .service-icon {
+        display: none;
         position: absolute;
         top: 88%;
         left: 85%;
@@ -254,6 +255,13 @@
 }
 
 @media (max-width: 480px) {
+    .service-section .service-card-section #serviceCard1 #serviceImg1,
+    .service-section .service-card-section #serviceCard2 #serviceImg2,
+    .service-section .service-card-section #serviceCard3 #serviceImg3,
+    .service-section .service-card-section #serviceCard4 #serviceImg4,
+    .service-section .service-card-section #serviceCard5 #serviceImg5{
+        height: 70%;
+    }
     .service-card-section .card .card-body .card-text{
         display: none;
     }

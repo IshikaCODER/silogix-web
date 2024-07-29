@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/Section1.css'
-import img1 from '../assets/images/rd1.jpg';
-import img2 from '../assets/images/rd2.jpeg';
-import img3 from '../assets/images/rd3.jpg';
+import '../../styles/Section1.css'
+import img1 from '../../assets/images/rd1.jpg';
+import img2 from '../../assets/images/rd2.jpeg';
+import img3 from '../../assets/images/rd3.jpg';
 
 
 function RDSection() {

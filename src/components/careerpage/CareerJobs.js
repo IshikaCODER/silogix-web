@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
-import '../styles/CareerJobs.css';
-import '../styles/CareerForm.css';
+import '../../styles/CareerJobs.css';
+import '../../styles/CareerForm.css';
 import { Link } from 'react-router-dom';
-import logo1 from '../assets/images/logo.png';
-import logo2 from '../assets/images/logo192.png';
-import logo3 from '../assets/images/node.png';
+import logo1 from '../../assets/images/logo.png';
+import logo2 from '../../assets/images/logo192.png';
+import logo3 from '../../assets/images/node.png';
 
 import {
     Dialog,

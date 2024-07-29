@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/ServiceContent.css';
+import '../../styles/ServiceContent.css';
 import { Link } from 'react-router-dom';
-import img from '../assets/images/skill.jpg';
-import ProgressBar from '../components/third-party/ProgressBar';
+import img from '../../assets/images/skill.jpg';
+import ProgressBar from '../third-party/ProgressBar';
 
 function ServiceContent() {
     return (

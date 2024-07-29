@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/Section1.css'
-import img1 from '../assets/images/about1.jpeg';
-import img2 from '../assets/images/about2.png';
-import img3 from '../assets/images/about3.jpg';
-import img4 from '../assets/images/about4.jpeg';
+import '../../styles/Section1.css'
+import img1 from '../../assets/images/about1.jpeg';
+import img2 from '../../assets/images/about2.png';
+import img3 from '../../assets/images/about3.jpg';
+import img4 from '../../assets/images/about4.jpeg';
 
 function AboutSection() {
     return (

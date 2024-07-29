@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
-import '../styles/SubSection.css';
-import { Link } from 'react-router-dom';
-import icon from '../assets/images/sub-icon.png';
+import '../../styles/SubSection.css';
+import icon from '../../assets/images/sub-icon.png';
 
 function SubSection() {
     const [formData, setFormData] = useState({

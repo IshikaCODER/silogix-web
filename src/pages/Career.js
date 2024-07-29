@@ -1,9 +1,9 @@
 import React from "react";
 import banner from "../assets/banners/career-banner.png";
-import CareerSteps from "../components/CareerSteps";
-import CareerJobs from "../components/CareerJobs";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import CareerSteps from "../components/careerpage/CareerSteps";
+import CareerJobs from "../components/careerpage/CareerJobs";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function Career() {
   document.title = "Career";

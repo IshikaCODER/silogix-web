@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/AboutQuote.css';
+import '../../styles/AboutQuote.css';
 
 function AboutQuote() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import banner from "../assets/banners/service-banner.png";
-import ServiceCards from "../components/ServiceCards";
-import ServiceContent from "../components/ServiceContent";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import ServiceCards from "../components/servicepage/ServiceCards";
+import ServiceContent from "../components/servicepage/ServiceContent";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function Service() {
   document.title = "Services";

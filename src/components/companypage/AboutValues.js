@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/AboutValues.css";
+import "../../styles/AboutValues.css";
 
 function Values() {
   return (

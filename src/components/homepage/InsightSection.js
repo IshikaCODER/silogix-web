@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/InsightSection.css';
+import '../../styles/InsightSection.css';
 import { Link } from 'react-router-dom';
-import insight1 from '../assets/images/insight1.png';
-import insight2 from '../assets/images/insight2.jpg';
-import insight3 from '../assets/images/insight3.webp';
+import insight1 from '../../assets/images/insight1.png';
+import insight2 from '../../assets/images/insight2.jpg';
+import insight3 from '../../assets/images/insight3.webp';
 
 function InsightSection() {
     return (

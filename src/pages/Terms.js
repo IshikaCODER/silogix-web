@@ -1,8 +1,8 @@
 import React from "react";
 import banner from "../assets/banners/terms-banner.png";
-import TermsContent from "../components/TermsContent";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import TermsContent from "../components/termsconditions/TermsContent";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function Terms() {
   document.title = "Terms & Conditions";

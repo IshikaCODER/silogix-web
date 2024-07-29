@@ -1,18 +1,18 @@
 import React from "react";
-import "../styles/BlogSection.css";
+import "../../styles/BlogSection.css";
 import { Link } from "react-router-dom";
-import blog1 from "../assets/images/blog1.jpg";
-import blog2 from "../assets/images/blog2.jpg";
-import blog3 from "../assets/images/blog3.jpg";
-import blog4 from "../assets/images/blog4.jpg";
-import blog5 from "../assets/images/blog5.jpg";
-import blog6 from "../assets/images/blog6.jpg";
-import blog7 from "../assets/images/blog7.png";
-import blog8 from "../assets/images/blog8.jpg";
-import blog9 from "../assets/images/blog9.jpg";
-import blog10 from "../assets/images/blog10.jpg";
-import blog11 from "../assets/images/blog11.jpg";
-import blog12 from "../assets/images/blog12.jpg";
+import blog1 from "../../assets/images/blog1.jpg";
+import blog2 from "../../assets/images/blog2.jpg";
+import blog3 from "../../assets/images/blog3.jpg";
+import blog4 from "../../assets/images/blog4.jpg";
+import blog5 from "../../assets/images/blog5.jpg";
+import blog6 from "../../assets/images/blog6.jpg";
+import blog7 from "../../assets/images/blog7.png";
+import blog8 from "../../assets/images/blog8.jpg";
+import blog9 from "../../assets/images/blog9.jpg";
+import blog10 from "../../assets/images/blog10.jpg";
+import blog11 from "../../assets/images/blog11.jpg";
+import blog12 from "../../assets/images/blog12.jpg";
 
 const images = [
   { id: 1, src: blog1, alt_title: "blog1" },

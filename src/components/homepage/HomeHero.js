@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/HomeHero.css';
+import '../../styles/HomeHero.css';
 import { Link } from 'react-router-dom';
-import bg1 from '../assets/banners/home-hero.png';
-import logo from '../assets/images/logo.png';
-import team1 from '../assets/banners/small-img-1.png';
-import team2 from '../assets/banners/small-img-2.png';
-import team3 from '../assets/banners/small-img-3.png';
-import team4 from '../assets/banners/small-img-4.png';
-import icon2 from '../assets/images/icon2.svg';
+import bg1 from '../../assets/banners/home-hero.png';
+import logo from '../../assets/images/logo.png';
+import team1 from '../../assets/banners/small-img-1.png';
+import team2 from '../../assets/banners/small-img-2.png';
+import team3 from '../../assets/banners/small-img-3.png';
+import team4 from '../../assets/banners/small-img-4.png';
+import icon2 from '../../assets/images/icon2.svg';
 
 
 

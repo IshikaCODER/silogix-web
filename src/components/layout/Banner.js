@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/PageBanner.css';
+import '../../styles/PageBanner.css';
 import { Link } from 'react-router-dom';
 
 function Banner({ bannerImage, title, breadcrumbs }) {

@@ -1,11 +1,11 @@
 import React from 'react';
-import HomeHero from '../components/HomeHero';
-import InsightSection from '../components/InsightSection';
-import AboutSection from '../components/AboutSection';
-import ServiceSection from '../components/ServiceSection';
-import RDSection from '../components/RDSection';
-import BlogSection from '../components/BlogSection';
-import SubSection from '../components/SubSection';
+import HomeHero from '../components/homepage/HomeHero';
+import InsightSection from '../components/homepage/InsightSection';
+import AboutSection from '../components/homepage/AboutSection';
+import ServiceSection from '../components/homepage/ServiceSection';
+import RDSection from '../components/homepage/RDSection';
+import BlogSection from '../components/homepage/BlogSection';
+import SubSection from '../components/layout/SubSection';
 
 function Home() {
   document.title = 'Home';

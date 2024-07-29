@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/ServiceCards.css'
-import service1 from '../assets/images/s1.jpeg';
-import service2 from '../assets/images/s2.jpeg';
-import service3 from '../assets/images/s3.jpg';
-import service4 from '../assets/images/s4.jpeg';
-import service5 from '../assets/images/s5.jpeg';
+import '../../styles/ServiceCards.css'
+import service1 from '../../assets/images/s1.jpeg';
+import service2 from '../../assets/images/s2.jpeg';
+import service3 from '../../assets/images/s3.jpg';
+import service4 from '../../assets/images/s4.jpeg';
+import service5 from '../../assets/images/s5.jpeg';
 
 const images = [
     { id: 1, src: service1, alt_title: "img1" },

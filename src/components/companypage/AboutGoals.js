@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/AboutGoals.css';
-import mission from '../assets/images/mission.jpeg';
-import vision from '../assets/images/vision.webp';
+import '../../styles/AboutGoals.css';
+import mission from '../../assets/images/mission.jpeg';
+import vision from '../../assets/images/vision.webp';
 
 function AboutGoals() {
     return (

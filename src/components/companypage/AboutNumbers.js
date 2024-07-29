@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/AboutNumbers.css';
-import videoUrl from '../assets/Video.mp4';
+import '../../styles/AboutNumbers.css';
+import videoUrl from '../../assets/Video.mp4';
 
 function AboutNumbers() {
     const [numbers, setNumbers] = useState([

@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/BlogSection.css";
+import "../../styles/BlogSection.css";
 import { Link } from 'react-router-dom';
-import blog1 from "../assets/images/blog1.jpg";
-import blog2 from "../assets/images/blog2.jpg";
-import blog3 from "../assets/images/blog3.jpg";
+import blog1 from "../../assets/images/blog1.jpg";
+import blog2 from "../../assets/images/blog2.jpg";
+import blog3 from "../../assets/images/blog3.jpg";
 
 const blogData = [
   {

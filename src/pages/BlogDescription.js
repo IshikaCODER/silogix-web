@@ -1,8 +1,8 @@
 import React from "react";
 import banner from "../assets/banners/blog-banner2.png";
-import BlogContent from "../components/BlogContent";
-import SubSection from "../components/SubSection";
-import Banner from "../components/Banner";
+import BlogContent from "../components/blog/BlogContent";
+import SubSection from "../components/layout/SubSection";
+import Banner from "../components/layout/Banner";
 
 function BlogDescription() {
   document.title = "Blog Description";

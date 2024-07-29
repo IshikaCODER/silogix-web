@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/ContactInfo.css';
-import info1 from '../assets/images/info-1.png';
-import info2 from '../assets/images/info-2.png';
-import info3 from '../assets/images/info-3.png';
+import '../../styles/ContactInfo.css';
+import info1 from '../../assets/images/info-1.png';
+import info2 from '../../assets/images/info-2.png';
+import info3 from '../../assets/images/info-3.png';
 
 const contactData = [
     {
