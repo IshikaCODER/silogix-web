@@ -9,17 +9,19 @@ import Privacy from "../pages/Privacy";
 import Terms from "../pages/Terms";
 import FAQ from "../pages/FAQs";
 
+
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/company", element: <Company /> },
   { path: "/service", element: <Service /> },
   { path: "/career", element: <Career /> },
   { path: "/blog", element: <Blog /> },
-  { path: "/blogdescription", element: <BlogDescription /> },
+  { path: "/blog/:id", element: <BlogDescription /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },
   { path: "/faqs", element: <FAQ /> },
 ];
+
 
 export default routes;
