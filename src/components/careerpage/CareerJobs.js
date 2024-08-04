@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import moment from 'moment';
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import '../../styles/CareerJobs.css';
 import '../../styles/CareerForm.css';
-// import logo1 from '../../assets/images/logo.png';
-// import logo2 from '../../assets/images/logo192.png';
-// import logo3 from '../../assets/images/node.png';
 
 import {
     Dialog,
@@ -15,72 +13,6 @@ import {
     DialogContent,
     DialogActions,
 } from "@mui/material";
-
-// const logos = [
-//     { id: 1, src: logo1, title: 'Silogix' },
-//     { id: 2, src: logo2, title: 'React' },
-//     { id: 3, src: logo1, title: 'Silogix' },
-//     { id: 4, src: logo3, title: 'nodejs' },
-//     { id: 5, src: logo1, title: 'Silogix' }
-// ]
-
-// const jobData = [
-//     {
-//         imgSrc: { src: "", alt: "" },
-//         time: " 3 weeks ago",
-//         link: "#",
-//         post: "Senior Associate Engineer-System",
-//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-//         category: "IT/Tech Support/System Support",
-//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-//         date: "2024-07-15"
-//     },
-//     {
-//         imgSrc: { src: "", alt: "" },
-//         time: " 1 month ago",
-//         link: "#",
-//         post: "Senior Software Engineer - REACT",
-//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-//         category: "Software Development",
-//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-//         date: "2024-07-18"
-//     },
-//     {
-//         imgSrc: { src: "", alt: "" },
-//         time: " 1 month ago",
-//         link: "#",
-//         post: "QA Engineer",
-//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-//         category: "Quality Assurance (QA)",
-//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-//         date: "2024-07-18"
-//     },
-//     {
-//         imgSrc: { src: "", alt: "" },
-//         time: " 1 month ago",
-//         link: "#",
-//         post: "Software Engineer - Node JS",
-//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-//         category: "Software Development",
-//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-//         date: "2024-07-18"
-//     },
-//     {
-//         imgSrc: { src: "", alt: "" },
-//         time: " 1 month ago",
-//         link: "#",
-//         post: "Senior Software Engineer - Java",
-//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-//         category: "Software Engineer",
-//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-//         date: "2024-07-18"
-//     }
-// ]
-
-// jobData.forEach((job, index) => {
-//     job.imgSrc.src = logos[index].src;
-//     job.imgSrc.alt = logos[index].title;
-// });
 
 function truncateTitle(title, limit = 20) {
     const words = title.split(' ');
@@ -229,7 +161,7 @@ function CareerJobs() {
                                             </li>
                                             <li className="list-two">
                                                 <i className="fa-regular fa-clock"></i>
-                                                {job.createdAt}
+                                                {moment(job.deadline, 'DD-MM-YYYY HH:mm:ss').fromNow(true)}
                                             </li>
                                         </ul>
                                         <h3>
