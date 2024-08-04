@@ -50,7 +50,7 @@
     margin-bottom: 10px;
     font-size: 24px;
 }
-.find-jobs-card .content h3 a {
+.find-jobs-card .content h3{
     color: var(--dark1);
     -webkit-transition: var(--transition);
     transition: var(--transition);
@@ -97,7 +97,7 @@
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-.find-jobs-card:hover .content h3 a {
+.find-jobs-card:hover .content h3{
     color: var(--primary_color);
 }
 

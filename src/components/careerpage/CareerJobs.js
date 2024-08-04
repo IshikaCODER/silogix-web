@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import axios from "axios";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import '../../styles/CareerJobs.css';
 import '../../styles/CareerForm.css';
-import { Link } from 'react-router-dom';
-import logo1 from '../../assets/images/logo.png';
-import logo2 from '../../assets/images/logo192.png';
-import logo3 from '../../assets/images/node.png';
+// import logo1 from '../../assets/images/logo.png';
+// import logo2 from '../../assets/images/logo192.png';
+// import logo3 from '../../assets/images/node.png';
 
 import {
     Dialog,
@@ -15,83 +16,85 @@ import {
     DialogActions,
 } from "@mui/material";
 
-const logos = [
-    { id: 1, src: logo1, title: 'Silogix' },
-    { id: 2, src: logo2, title: 'React' },
-    { id: 3, src: logo1, title: 'Silogix' },
-    { id: 4, src: logo3, title: 'nodejs' },
-    { id: 5, src: logo1, title: 'Silogix' }
-]
+// const logos = [
+//     { id: 1, src: logo1, title: 'Silogix' },
+//     { id: 2, src: logo2, title: 'React' },
+//     { id: 3, src: logo1, title: 'Silogix' },
+//     { id: 4, src: logo3, title: 'nodejs' },
+//     { id: 5, src: logo1, title: 'Silogix' }
+// ]
 
-const jobData = [
-    {
-        imgSrc: { src: "", alt: "" },
-        time: " 3 weeks ago",
-        link: "#",
-        post: "Senior Associate Engineer-System",
-        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-        category: "IT/Tech Support/System Support",
-        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-        date: "2024-07-15"
-    },
-    {
-        imgSrc: { src: "", alt: "" },
-        time: " 1 month ago",
-        link: "#",
-        post: "Senior Software Engineer - REACT",
-        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-        category: "Software Development",
-        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-        date: "2024-07-18"
-    },
-    {
-        imgSrc: { src: "", alt: "" },
-        time: " 1 month ago",
-        link: "#",
-        post: "QA Engineer",
-        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-        category: "Quality Assurance (QA)",
-        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-        date: "2024-07-18"
-    },
-    {
-        imgSrc: { src: "", alt: "" },
-        time: " 1 month ago",
-        link: "#",
-        post: "Software Engineer - Node JS",
-        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-        category: "Software Development",
-        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-        date: "2024-07-18"
-    },
-    {
-        imgSrc: { src: "", alt: "" },
-        time: " 1 month ago",
-        link: "#",
-        post: "Senior Software Engineer - Java",
-        company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
-        category: "Software Engineer",
-        location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
-        date: "2024-07-18"
+// const jobData = [
+//     {
+//         imgSrc: { src: "", alt: "" },
+//         time: " 3 weeks ago",
+//         link: "#",
+//         post: "Senior Associate Engineer-System",
+//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+//         category: "IT/Tech Support/System Support",
+//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+//         date: "2024-07-15"
+//     },
+//     {
+//         imgSrc: { src: "", alt: "" },
+//         time: " 1 month ago",
+//         link: "#",
+//         post: "Senior Software Engineer - REACT",
+//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+//         category: "Software Development",
+//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+//         date: "2024-07-18"
+//     },
+//     {
+//         imgSrc: { src: "", alt: "" },
+//         time: " 1 month ago",
+//         link: "#",
+//         post: "QA Engineer",
+//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+//         category: "Quality Assurance (QA)",
+//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+//         date: "2024-07-18"
+//     },
+//     {
+//         imgSrc: { src: "", alt: "" },
+//         time: " 1 month ago",
+//         link: "#",
+//         post: "Software Engineer - Node JS",
+//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+//         category: "Software Development",
+//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+//         date: "2024-07-18"
+//     },
+//     {
+//         imgSrc: { src: "", alt: "" },
+//         time: " 1 month ago",
+//         link: "#",
+//         post: "Senior Software Engineer - Java",
+//         company: "Silogix Nanosystems (OPC) Pvt. Ltd.",
+//         category: "Software Engineer",
+//         location: "RK Hedge Nagar, Bengaluru, 560077, Karnataka, India",
+//         date: "2024-07-18"
+//     }
+// ]
+
+// jobData.forEach((job, index) => {
+//     job.imgSrc.src = logos[index].src;
+//     job.imgSrc.alt = logos[index].title;
+// });
+
+function truncateTitle(title, limit = 20) {
+    const words = title.split(' ');
+    if (words.length > limit) {
+        return words.slice(0, limit).join(' ') + '...';
     }
-]
-
-jobData.forEach((job, index) => {
-    job.imgSrc.src = logos[index].src;
-    job.imgSrc.alt = logos[index].title;
-});
+    return title;
+}
 
 function CareerJobs() {
+    const [jobs, setJobs] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [currentPage, setCurrentPage] = useState(1);
     const [openForm, setOpenForm] = useState(false);
-
-    const handleOpenForm = () => {
-        setOpenForm(true);
-    };
-
-    const handleCloseForm = () => {
-        setOpenForm(false);
-    };
-
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -100,6 +103,48 @@ function CareerJobs() {
         upload: ""
     });
     const [errors, setErrors] = useState({});
+    const jobsPerPage = 5;
+
+    useEffect(() => {
+        const fetchJobs = async () => {
+            try {
+                const response = await axios.get("https://silogix-backend.vercel.app/api/jobportal/");
+                setJobs(response.data);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching the job data:", error);
+                setLoading(false);
+            }
+        };
+
+        fetchJobs();
+    }, []);
+
+    const indexOfLastJob = currentPage * jobsPerPage;
+    const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+    const currentJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
+
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(jobs.length / jobsPerPage); i++) {
+        pageNumbers.push(i);
+    }
+
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    const handleOpenForm = () => {
+        setOpenForm(true);
+    };
+
+    const handleCloseForm = () => {
+        setOpenForm(false);
+    };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -163,50 +208,85 @@ function CareerJobs() {
                     {/* <!-- job-cards-start --> */}
                     <div className="row pt-45">
                         {/* <!-- job-card-1 --> */}
-                        {jobData.map((job, index) => (
-                            <div className="col-lg-12" key={index}>
+                        {currentJobs.map((job) => (
+                            <motion.div
+                                className="col-lg-12"
+                                key={job._id}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1.0, ease: "easeIn" }}
+                            >
                                 <div className="find-jobs-card d-flex align-items-center">
                                     <div className="find-jobs-img col-xl-3 col-sm-4">
                                         <img className="w-75"
-                                            src={job.imgSrc.src}
-                                            alt={job.imgSrc.alt} />
+                                            src={job.image}
+                                            alt={job.title || 'Job Image'} />
                                     </div>
-
                                     <div className="content col-xl-9">
                                         <ul className="content-list">
-                                            <li className="time">Full Time</li>
-                                            <li className="list-two"><i className="fa-regular fa-clock"></i>{job.time}</li>
+                                            <li className="time">
+                                                {job.type}
+                                            </li>
+                                            <li className="list-two">
+                                                <i className="fa-regular fa-clock"></i>
+                                                {job.createdAt}
+                                            </li>
                                         </ul>
                                         <h3>
-                                            <Link to={job.link}>{job.post}</Link>
+                                            {/* <Link to={job.link}>{job.post}</Link> */}
+                                            {truncateTitle(job.title)}
                                         </h3>
                                         <ul className="content-list2">
-                                            <li className="list-one">{job.company}</li>
+                                            <li className="list-one">
+                                                {job.company}
+                                            </li>
                                         </ul>
-
                                         <ul className="content-list3">
-                                            <li><i className="fa-solid fa-briefcase"></i> Category : <b>{job.category}</b></li>
-                                            <li><i className="fa-solid fa-location-dot"></i> Location : <b>{job.location}</b></li>
-                                            <li><i className="fa-regular fa-clock"></i>Apply Before : <b>{job.date}</b></li>
+                                            <li>
+                                                <i className="fa-solid fa-briefcase"></i>
+                                                Category : <b>{job.category.name}</b>
+                                            </li>
+                                            <li>
+                                                <i className="fa-solid fa-location-dot"></i>
+                                                Location : <b>{job.location}</b>
+                                            </li>
+                                            <li>
+                                                <i className="fa-regular fa-clock"></i>
+                                                Apply Before : <b>{job.deadline}</b>
+                                            </li>
                                         </ul>
                                     </div>
 
                                     <div className="find-jobs-btn">
-                                        <Link to={job.link} className="default-btn theme-btn" id='applyBtn' onClick={handleOpenForm}>
+                                        <button className="default-btn theme-btn" id='applyBtn' onClick={handleOpenForm}>
                                             Apply Now<i class="fa-regular fa-paper-plane"></i>
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
+                        <div className="pagination justify-content-center">
+                            {pageNumbers.map(number => (
+                                <motion.button
+                                    key={number}
+                                    onClick={() => paginate(number)}
+                                    className={`page-link ${number === currentPage ? 'active' : ''}`}
+                                    initial={{ scale: 0.9 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    {number}
+                                </motion.button>
+                            ))}
+                        </div>
                         {/* <!-- learn-more-btn-start--> */}
-                        <div className="col-lg-12 text-center mt-5">
+                        {/* <div className="col-lg-12 text-center mt-5">
                             <div className="browse-btn">
                                 <a href="#">
                                     Load More Job Opportunity <i className="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         {/* <!-- learn-more-btn-end--> */}
                     </div>
                     {/* <!-- job-cards-end --> */}
@@ -278,9 +358,9 @@ function CareerJobs() {
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <select 
-                                            id="country" 
-                                            name="country" 
+                                        <select
+                                            id="country"
+                                            name="country"
                                             value={formData.country}
                                             onChange={handleInputChange}
                                         >

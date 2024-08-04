@@ -114,7 +114,7 @@ function BlogCards() {
                 </motion.div>
               ))}
             </div>
-            <div className="pagination">
+            <div className="pagination justify-content-center">
               {pageNumbers.map(number => (
                 <motion.button
                   key={number}

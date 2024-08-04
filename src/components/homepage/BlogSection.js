@@ -1,9 +1,6 @@
 import React from "react";
 import "../../styles/BlogSection.css";
 import { Link } from 'react-router-dom';
-import blog1 from "../../assets/images/blog1.jpg";
-import blog2 from "../../assets/images/blog2.jpg";
-import blog3 from "../../assets/images/blog3.jpg";
 
 const blogData = [
   {
@@ -11,15 +8,7 @@ const blogData = [
     author: "Oliver Smith",
     comments: 0,
     title: "Advanced Chip Technologies",
-    imgSrc: blog1,
-    link: "/blogdescription"
-  },
-  {
-    date: { day: "07", month: "Jul" },
-    author: "Oliver Smith",
-    comments: 0,
-    title: "Innovative Design Solutions",
-    imgSrc: blog2,
+    imgSrc: "https://i.ibb.co/XFdT7cc/blog1.jpg",
     link: "/blogdescription"
   },
   {
@@ -27,7 +16,15 @@ const blogData = [
     author: "Oliver Smith",
     comments: 0,
     title: "Breakthroughs in Chip Performance",
-    imgSrc: blog3,
+    imgSrc: "https://i.ibb.co/StzkdLv/blog3.jpg",
+    link: "/blogdescription"
+  },
+  {
+    date: { day: "07", month: "Jul" },
+    author: "Oliver Smith",
+    comments: 0,
+    title: "Innovative Design Solutions",
+    imgSrc: "https://i.ibb.co/PjptMqk/technology-pictures.jpg",
     link: "/blogdescription"
   }
 ];

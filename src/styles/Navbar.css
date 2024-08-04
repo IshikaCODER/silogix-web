@@ -432,6 +432,9 @@ input {
     box-shadow: none;
   }
 
+  .header-area .navbar-wrapper ul li .dropdown-menu-item-icon{
+    visibility: hidden;
+  } 
   .header-area .navbar-wrapper {
     position: fixed;
     width: 100%;
@@ -510,7 +513,6 @@ input {
   }
 
   .header-area .navbar-wrapper ul li>.dropdown-menu,
-  .header-area .navbar-wrapper ul li .dropdown-menu-item-icon,
   .header-area .navbar-wrapper .close-menu-bar,
   .header-area .header-left .menu-bar {
     display: block;

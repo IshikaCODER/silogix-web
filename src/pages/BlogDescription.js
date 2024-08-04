@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import banner from "../assets/banners/blog-banner2.png";
 import BlogContent from "../components/blog/BlogContent";
 import SubSection from "../components/layout/SubSection";
 import Banner from "../components/layout/Banner";
@@ -44,20 +43,20 @@ function BlogDescription() {
 
   const breadcrumbs = [
     { label: "Home", link: "/" },
-    { label: "Blog Title Page" },
+    { label: blog.author },
   ];
 
 
   return (
     <>
       <Banner
-        bannerImage={banner}
+        bannerImage={blog.image}
         title={blog.title}
         breadcrumbs={breadcrumbs}
       />
       <BlogContent
-        title={blog.title}
-        author={blog.author}
+        // title={blog.title}
+        // author={blog.author}
         content={blog.content}
       />
       <SubSection />
