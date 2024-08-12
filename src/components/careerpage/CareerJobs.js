@@ -42,7 +42,7 @@ function CareerJobs() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await axios.get("https://silogix-backend.vercel.app/api/jobportal/");
+                const response = await axios.get("/api/jobportal/");
                 setJobs(response.data);
                 setLoading(false);
             } catch (error) {
