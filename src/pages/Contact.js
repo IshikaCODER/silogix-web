@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
+import axios from "axios";
 import banner from "../assets/banners/cta-banner.png";
 import "../styles/ContactForm.css";
 import ContactInfo from "../components/contactpage/ContactInfo";
 import SubSection from "../components/layout/SubSection";
 import Banner from "../components/layout/Banner";
+
 
 function Contact() {
   document.title = "Contact Us";
@@ -18,10 +20,12 @@ function Contact() {
   const [errors, setErrors] = useState({});
   const breadcrumbs = [{ label: "Home", link: "/" }, { label: "Contact Us" }];
 
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
 
   const validate = () => {
     let formErrors = {};
@@ -36,24 +40,48 @@ function Contact() {
     return formErrors;
   };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formErrors = validate();
     if (Object.keys(formErrors).length === 0) {
-      // No errors, submit form
-      console.log("Form submitted successfully", formData);
-      // Clear form data after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      Toastify({
-        text: "Form submitted successfully",
-        backgroundColor: "green",
-        className: "toastify-success",
-      }).showToast();
+      try {
+        const response = await axios.post(
+          "https://silogix-backend.vercel.app/api/contacts",
+          formData
+        );
+        // Log the response
+        console.log(response);
+
+
+        if (
+          response.status === 201 &&
+          response.data.message === "Form submitted successfully"
+        ) {
+          // Clear form data after successful submission
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          Toastify({
+            text: "Form submitted successfully",
+            backgroundColor: "green",
+            className: "toastify-success",
+          }).showToast();
+        } else {
+          throw new Error("Failed to submit form");
+        }
+      } catch (error) {
+        // Log the error
+        console.error(error);
+        Toastify({
+          text: "Error submitting form. Please try again.",
+          backgroundColor: "red",
+          className: "toastify-error",
+        }).showToast();
+      }
     } else {
       setErrors(formErrors);
       Toastify({
@@ -63,6 +91,7 @@ function Contact() {
       }).showToast();
     }
   };
+
 
   return (
     <>
@@ -173,5 +202,6 @@ function Contact() {
     </>
   );
 }
+
 
 export default Contact;

@@ -27,12 +27,14 @@ function CareerJobs() {
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
     const [openForm, setOpenForm] = useState(false);
+    const [file, setFile] = useState(null);
+    const [selectedJobId, setSelectedJobId] = useState(null);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        skill: "",
+        skills: "",
         country: "",
-        upload: ""
+        position: ""
     });
     const [errors, setErrors] = useState({});
     const jobsPerPage = 5;
@@ -83,6 +85,10 @@ function CareerJobs() {
         setFormData({ ...formData, [name]: value });
     };
 
+    const onFileChange = (e) => {
+        setFile(e.target.files[0]);
+    };
+
     const validate = () => {
         let formErrors = {};
         if (!formData.name) formErrors.name = "Name is required";
@@ -91,31 +97,79 @@ function CareerJobs() {
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             formErrors.email = "Email is invalid";
         }
-        if (!formData.skill) formErrors.skill = "Skills are required";
+        if (!formData.skills) formErrors.skills = "Skills are required";
         if (!formData.country) formErrors.country = "Please select an option!";
-        if (!formData.upload) formErrors.upload = "CV is required ";
+        if (!file) formErrors.resume = "CV is required ";
         return formErrors;
     };
 
-    const handleSubmit = (e) => {
+
+
+    // When a job is selected
+    const handleJobSelection = (job) => {
+        setSelectedJobId(job._id);
+        console.log("Selected Job ID:", job._id);  // Log the selected Job ID
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const formErrors = validate();
         if (Object.keys(formErrors).length === 0) {
-            // No errors, submit form
-            console.log("Form submitted successfully", formData);
-            // Clear form data after successful submission
-            setFormData({
-                name: "",
-                email: "",
-                skill: "",
-                country: "",
-                upload: ""
-            });
-            Toastify({
-                text: "Form submitted successfully",
-                backgroundColor: "green",
-                className: "toastify-success",
-            }).showToast();
+
+            try {
+                const formDataToSubmit = new FormData();
+                formDataToSubmit.append("name", formData.name);
+                formDataToSubmit.append("email", formData.email);
+                formDataToSubmit.append("skills", formData.skills);
+                formDataToSubmit.append("country", formData.country);
+                formDataToSubmit.append("position", selectedJobId);
+                formDataToSubmit.append("resume", file);  // Append file to FormData
+
+                const response = await axios.post(
+                    "https://silogix-backend.vercel.app/api/applicants",
+                    formDataToSubmit, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'  // Set the correct content type
+                    }
+                }
+                );
+
+                // Log the response
+                console.log(response);
+
+                // console.log("Form submitted successfully", formData);
+
+                if (
+                    response.status === 201 &&
+                    response.data.message === "Form submitted successfully"
+                ) {
+                    // Clear form data after successful submission
+                    setFormData({
+                        name: "",
+                        email: "",
+                        skills: "",
+                        country: "",
+                        // upload: ""
+                    });
+                    setFile(null); // Clear file input
+                    console.log(resume);
+                    Toastify({
+                        text: "Form submitted successfully",
+                        backgroundColor: "green",
+                        className: "toastify-success",
+                    }).showToast();
+                } else {
+                    throw new Error("Failed to submit form");
+                }
+            } catch (error) {
+                // Log the error
+                console.error(error);
+                Toastify({
+                    text: "Error submitting form. Please try again.",
+                    backgroundColor: "red",
+                    className: "toastify-error",
+                }).showToast();
+            }
         } else {
             setErrors(formErrors);
             Toastify({
@@ -147,6 +201,7 @@ function CareerJobs() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1.0, ease: "easeIn" }}
+                                onClick={() => handleJobSelection(job)} // Pass the job object here
                             >
                                 <div className="find-jobs-card d-flex align-items-center">
                                     <div className="find-jobs-img col-xl-3 col-sm-4">
@@ -225,8 +280,6 @@ function CareerJobs() {
                 </div>
             </div>
             {/* <!-- jobs-section-start --> */}
-
-            {/* <!-- pop-up-apply-form-start --> */}
             <Dialog open={openForm} onClose={() => setOpenForm(false)} fullWidth>
                 <div id="formPopup" className="form-popup">
                     <form onSubmit={handleSubmit} className="form-container">
@@ -243,6 +296,7 @@ function CareerJobs() {
                         {/* <!-- form-fields-start --> */}
                         <DialogContent sx={{ paddingLeft: '10px', paddingRight: '10px', overflow: 'hidden' }}>
                             <div className="row">
+                                <input type="hidden" name="position" value={selectedJobId} />
                                 <div className="col-sm-12">
                                     <div className="single-form">
                                         <input
@@ -277,14 +331,14 @@ function CareerJobs() {
                                     <div className="single-form">
                                         <input
                                             type="text"
-                                            id="skill"
-                                            name="skill"
+                                            id="skills"
+                                            name="skills"
                                             placeholder="Skills *"
-                                            value={formData.skill}
+                                            value={formData.skills}
                                             onChange={handleInputChange}
                                         />
-                                        {errors.skill && (
-                                            <span className="error">{errors.skill}</span>
+                                        {errors.skills && (
+                                            <span className="error">{errors.skills}</span>
                                         )}
                                     </div>
                                 </div>
@@ -302,18 +356,25 @@ function CareerJobs() {
                                             <option value="Canada">Canada</option>
                                             <option value="UK">UK</option>
                                         </select>
+                                        {errors.country && (
+                                            <span className="error">{errors.country}</span>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="single-form">
-                                        <label for="cv">Upload CV*</label>
+                                        <label for="resume">Upload CV*</label>
                                         <input
                                             type="file"
-                                            id="upload"
-                                            name="upload"
-                                            value={formData.upload}
-                                            onChange={handleInputChange}
+                                            id="resume"
+                                            name="resume"
+                                            // value={formData.upload}
+                                            accept=".pdf,.doc,.docx,.jpg"
+                                            onChange={onFileChange}
                                         />
+                                        {errors.resume && (
+                                            <span className="error">{errors.resume}</span>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -332,6 +393,8 @@ function CareerJobs() {
                 </div>
                 {/* <!-- pop-up-apply-form-end --> */}
             </Dialog >
+            {/* <!-- pop-up-apply-form-start --> */}
+
         </>
     )
 }
