@@ -56,7 +56,7 @@ function ServiceContent() {
                         </div>
                     </div>
                     <div className="contact-btn-section">
-                        <Link to="#" className="btn theme-btn">
+                        <Link to="/contact" className="btn theme-btn">
                             Contact Us <i className="fa-solid fa-arrow-right"></i>
                         </Link>
                     </div>
